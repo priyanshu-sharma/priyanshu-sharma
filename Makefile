@@ -1,4 +1,4 @@
-.PHONY: startapp format lint fix precommit precommit-install
+.PHONY: startapp format lint fix precommit precommit-install clean
 
 startapp:
 	uv run python run.py
@@ -19,3 +19,6 @@ precommit:
 
 precommit-install:
 	uv run pre-commit install
+
+clean:
+	rm -rf __pycache__ components/__pycache__ pages/__pycache__ server_config/__pycache__ .ruff_cache

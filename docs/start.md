@@ -100,3 +100,9 @@ Install pre-commit hooks:
 ```bash
 make precommit-install
 ```
+
+Clean Python and Ruff caches:
+
+```bash
+make clean
+```
