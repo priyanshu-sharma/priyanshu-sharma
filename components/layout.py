@@ -1,31 +1,8 @@
 from fasthtml.common import *
+
 from content import PROFILE
 
-NAV_ITEMS = [
-    ("/", "Home"),
-    ("/projects", "Projects"),
-    ("/experience", "Experience"),
-    ("/blog", "Blog"),
-    ("/social", "Social"),
-    ("/contact", "Contact"),
-]
-
-
-def project_card(tag: str, title: str, desc: str):
-    return Article(
-        P(tag, cls="muted", style="margin:0 0 0.3rem;font-size:0.75rem;"),
-        P(title, style="margin:0 0 0.4rem;font-size:0.95rem;font-weight:600;"),
-        P(desc, cls="muted", style="margin:0;font-size:0.9rem;"),
-        cls="card",
-    )
-
-
-def metric_card(value: str, label: str):
-    return Div(
-        Strong(value),
-        P(label, cls="muted", style="margin:0.2rem 0 0;font-size:0.78rem;"),
-        cls="metric",
-    )
+from .navigation import NAV_ITEMS
 
 
 def page_shell(title: str, active_path: str, *content):
@@ -41,7 +18,11 @@ def page_shell(title: str, active_path: str, *content):
                 Div(
                     Div(cls="avatar"),
                     Div(
-                        P(PROFILE["role"], cls="muted", style="margin:0;font-size:0.85rem;"),
+                        P(
+                            PROFILE["role"],
+                            cls="muted",
+                            style="margin:0;font-size:0.85rem;",
+                        ),
                         H1(PROFILE["name"], cls="h1"),
                     ),
                     cls="profile",
