@@ -1,6 +1,6 @@
 from fasthtml.common import *
 
-from components import metric_card, page_shell
+from ui.components import metric_card, page_shell
 from content import HOME, PROFILE
 
 

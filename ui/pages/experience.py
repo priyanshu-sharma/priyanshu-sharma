@@ -1,6 +1,6 @@
 from fasthtml.common import *
 
-from components import page_shell
+from ui.components import page_shell
 from content import EXPERIENCE, PROFILE
 
 

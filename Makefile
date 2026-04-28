@@ -21,4 +21,5 @@ precommit-install:
 	uv run pre-commit install
 
 clean:
-	rm -rf __pycache__ components/__pycache__ pages/__pycache__ server_config/__pycache__ .ruff_cache
+	find . -type d -name "__pycache__" -exec rm -rf {} +
+	rm -rf .ruff_cache
