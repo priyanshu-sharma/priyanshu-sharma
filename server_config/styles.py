@@ -14,12 +14,30 @@ body { margin: 0; background: var(--background); color: var(--foreground); font-
 h1, h2, h3, h4, h5, h6 { font-family: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
 p, a, button, span, strong, div { font-family: "FiraCode Nerd Font Retina", "FiraCode Nerd Font", "Fira Code Retina", "Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
 .container { max-width: 960px; margin: 0 auto; min-height: 100vh; padding: 2.5rem 1rem; }
-.header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border); margin-bottom: 2rem; }
-.profile { display: flex; align-items: center; gap: 0.75rem; }
+.header { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; margin-bottom: 2rem; }
+.header-left { justify-self: start; }
+.header-center { justify-self: center; }
+.header-right { justify-self: end; }
+.theme-toggle { background: none; border: 1px solid var(--border); border-radius: 6px; padding: 0.5rem; cursor: pointer; color: var(--foreground); }
+.header-nav { border-top: 1px solid var(--border); padding-top: 1.5rem; margin-bottom: 2rem; display: flex; justify-content: center; }
 .avatar { width: 40px; height: 40px; border-radius: 999px; border: 1px solid var(--border); background: var(--muted); }
-.muted { color: var(--muted-foreground); }
-.nav { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
-.h1 { margin: 0; font-size: 1.1rem; font-weight: 600; }
+.nav { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; justify-content: center; }
+.h1 { margin: 0; font-size: 1.8rem; font-weight: 700; }
+
+/* Light Mode Styles */
+body.light-mode {
+    --background: #ffffff;
+    --foreground: #000000;
+    --muted: #f4f4f5;
+    --muted-foreground: #71717a;
+    --card: #f9f9f9;
+    --border: #d4d4d8;
+    --primary: #000000;
+}
+body.light-mode .btn-primary {
+    background: #000000;
+    color: #ffffff;
+}
 .btn { display: inline-flex; align-items: center; justify-content: center; height: 36px; padding: 0 14px; border-radius: 6px; border: 1px solid var(--border); background: var(--card); color: var(--foreground); text-decoration: none; font-size: 0.875rem; font-weight: 500; }
 .btn-primary { background: var(--primary); border-color: var(--primary); color: var(--primary-foreground); }
 .card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.02) inset; }

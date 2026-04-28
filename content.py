@@ -41,21 +41,25 @@ PROJECTS = {
             "tag": "Realtime Platform",
             "title": "Streaming Ingestion Pipeline",
             "desc": "Event-driven processing with quality checks and low-latency serving for analytics consumers.",
+            "demo_href": "https://example.com/streaming-ingestion-demo",
         },
         {
             "tag": "Analytics",
             "title": "Lakehouse KPI Layer",
             "desc": "Built trusted transformation models and orchestration for reliable cross-functional reporting.",
+            "demo_href": "https://example.com/lakehouse-kpi-demo",
         },
         {
             "tag": "Machine Learning",
             "title": "Feature Pipeline Framework",
             "desc": "Implemented batch/stream feature generation with lineage and reproducible backfills.",
+            "demo_href": "https://example.com/feature-pipeline-demo",
         },
         {
             "tag": "Data Quality",
             "title": "Contract Monitoring Service",
             "desc": "Automated schema drift alerts and rule-based validation for upstream data contracts.",
+            "demo_href": "https://example.com/contract-monitoring-demo",
         },
     ],
 }

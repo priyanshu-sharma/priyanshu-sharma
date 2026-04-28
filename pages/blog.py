@@ -1,6 +1,6 @@
 from fasthtml.common import *
 
-from components import page_shell
+from components import page_shell, project_card
 from content import BLOG, PROFILE
 
 
@@ -16,21 +16,11 @@ def blog_page():
         Section(
             Div(
                 *(
-                    Article(
-                        P(
-                            post["date"],
-                            cls="muted",
-                            style="margin:0 0 0.35rem;font-size:0.78rem;",
-                        ),
-                        H3(post["title"], cls="section-label"),
-                        P(post["summary"], cls="muted"),
-                        A(
-                            "Read Post",
-                            href=post["href"],
-                            cls="btn",
-                            style="margin-top:0.8rem;",
-                        ),
-                        cls="card",
+                    project_card(
+                        post["date"],
+                        post["title"],
+                        post["summary"],
+                        demo_href=post["href"],
                     )
                     for post in BLOG["posts"]
                 ),

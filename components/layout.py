@@ -15,21 +15,28 @@ def page_shell(title: str, active_path: str, *content):
         Title(title),
         Div(
             Header(
+                Div(Div(cls="avatar"), cls="header-left"),
+                Div(H1(PROFILE["name"], cls="h1"), cls="header-center"),
                 Div(
-                    Div(cls="avatar"),
-                    Div(
-                        P(
-                            PROFILE["role"],
-                            cls="muted",
-                            style="margin:0;font-size:0.85rem;",
-                        ),
-                        H1(PROFILE["name"], cls="h1"),
-                    ),
-                    cls="profile",
+                    Button("🌙", cls="theme-toggle", onclick="toggleTheme()"),
+                    Script("""
+                        function applyTheme(isDark) {
+                            document.body.classList.toggle('light-mode', !isDark);
+                            document.querySelector('.theme-toggle').innerText = isDark ? '🌙' : '☀️';
+                            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+                        }
+                        function toggleTheme() {
+                            const isDark = document.body.classList.contains('light-mode');
+                            applyTheme(isDark);
+                        }
+                        const savedTheme = localStorage.getItem('theme') || 'dark';
+                        applyTheme(savedTheme === 'dark');
+                    """),
+                    cls="header-right",
                 ),
-                Div(*nav_links, cls="nav"),
                 cls="header",
             ),
+            Nav(Div(*nav_links, cls="nav"), cls="header-nav"),
             *content,
             Footer(
                 P(PROFILE["availability"], cls="muted", style="margin:0;"),
