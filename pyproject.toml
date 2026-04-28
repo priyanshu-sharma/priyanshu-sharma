@@ -1,0 +1,28 @@
+[project]
+name = "priyanshu-sharma"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.136.1",
+    "gunicorn>=25.3.0",
+    "python-fasthtml",
+    "uvicorn",
+]
+
+[dependency-groups]
+dev = [
+    "black>=26.3.1",
+    "pre-commit>=4.6.0",
+    "ruff>=0.15.12",
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py314"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py314"
+
+[tool.ruff.lint]
+ignore = ["F403", "F405"]
