@@ -35,7 +35,8 @@ body {
     background: var(--background); 
     color: var(--foreground); 
     font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    line-height: 1.6; 
+    font-size: 1rem;
+    line-height: 1.7;
     -webkit-font-smoothing: antialiased;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -46,6 +47,30 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: -0.02em;
     color: var(--foreground);
     transition: color 0.3s ease;
+    text-wrap: balance;
+}
+
+/* Focus States for Accessibility */
+:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+    border-radius: var(--radius);
+}
+
+/* Animated Links */
+a:not(.btn) {
+    color: var(--foreground);
+    text-decoration: none;
+    position: relative;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size 0.3s;
+}
+
+a:not(.btn):hover {
+    background-size: 100% 1px;
 }
 
 .container { 
@@ -117,6 +142,11 @@ h1, h2, h3, h4, h5, h6 {
     background: transparent;
     color: var(--foreground);
     border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.98);
 }
 
 .btn:hover {
@@ -130,6 +160,10 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--primary); 
     color: var(--primary-foreground); 
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
 }
 
 .btn-primary:hover {
