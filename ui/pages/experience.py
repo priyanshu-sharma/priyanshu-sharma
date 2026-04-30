@@ -17,9 +17,11 @@ def experience_page():
             Div(
                 *(
                     Article(
-                        H3(role["title"], cls="section-label"),
-                        P(role["summary"], cls="muted"),
-                        P(role["details"], style="margin-top:0.6rem;"),
+                        Header(
+                            H3(role["title"], style="margin:0; font-size:1.25rem;"),
+                        ),
+                        P(role["summary"], cls="muted", style="margin:0.5rem 0 0;"),
+                        P(role["details"], style="margin:1rem 0 0; font-size:0.9rem;"),
                         cls="card",
                     )
                     for role in EXPERIENCE["roles"]

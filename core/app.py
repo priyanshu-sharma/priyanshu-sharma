@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from fasthtml.common import FastHTML, Meta, Style
+from fasthtml.common import FastHTML, Meta, Style, Link
 from content import SITE
 from backend.server_config.styles import CSS
 from ui.pages import register_pages
@@ -18,6 +18,10 @@ def create_ui_app() -> FastHTML:
             Meta(property="og:description", content=SITE["description"]),
             Meta(property="og:type", content="website"),
             Meta(name="theme-color", content="#000000"),
+            Link(
+                rel="stylesheet",
+                href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+            ),
             Style(CSS),
         ),
     )

@@ -13,8 +13,13 @@ def contact_page():
             P(CONTACT["subtitle"], cls="subtitle muted"),
             Div(
                 A("Email Me", href=f"mailto:{PROFILE['email']}", cls="btn btn-primary"),
-                A("Download Resume", href=PROFILE["resume_path"], cls="btn"),
+                A(
+                    "Download Resume",
+                    href=PROFILE["resume_path"],
+                    cls="btn btn-primary",
+                ),
                 cls="btn-row",
+                style="gap: 1.5rem;",
             ),
             cls="section card",
         ),
