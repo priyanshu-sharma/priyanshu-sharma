@@ -1,6 +1,6 @@
 from fasthtml.common import *
 
-from components import page_shell, project_card
+from ui.components import page_shell, project_card
 from content import PROFILE, PROJECTS
 
 
@@ -16,7 +16,9 @@ def projects_page():
         Section(
             Div(
                 *(
-                    project_card(item["tag"], item["title"], item["desc"])
+                    project_card(
+                        item["tag"], item["title"], item["desc"], item.get("demo_href")
+                    )
                     for item in PROJECTS["items"]
                 ),
                 cls="grid-2",

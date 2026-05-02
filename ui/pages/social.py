@@ -1,6 +1,6 @@
 from fasthtml.common import *
 
-from components import page_shell
+from ui.components import page_shell
 from content import PROFILE, SOCIAL
 
 
@@ -17,15 +17,18 @@ def social_page():
             Div(
                 *(
                     Article(
-                        H3(item["name"], cls="section-label"),
-                        P(item["description"], cls="muted"),
+                        Div(
+                            H3(item["name"], style="margin-bottom: 1rem;"),
+                            P(item["description"], cls="muted"),
+                            cls="flex-1",
+                        ),
                         A(
                             item["cta"],
                             href=item["href"],
-                            cls="btn",
-                            style="margin-top:0.8rem;",
+                            cls="btn btn-primary",
+                            style="margin-top:1rem; align-self: flex-start;",
                         ),
-                        cls="card",
+                        cls="card flex-col",
                     )
                     for item in SOCIAL["links"]
                 ),

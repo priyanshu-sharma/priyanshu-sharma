@@ -1,6 +1,6 @@
 from fasthtml.common import *
 
-from components import page_shell
+from ui.components import page_shell
 from content import EXPERIENCE, PROFILE
 
 
@@ -17,10 +17,12 @@ def experience_page():
             Div(
                 *(
                     Article(
-                        H3(role["title"], cls="section-label"),
-                        P(role["summary"], cls="muted"),
-                        P(role["details"], style="margin-top:0.6rem;"),
-                        cls="card",
+                        Header(
+                            H3(role["title"]),
+                        ),
+                        P(role["summary"], cls="muted", style="margin:0.5rem 0 0;"),
+                        P(role["details"], style="margin:1rem 0 0; font-size:0.9rem;"),
+                        cls="card experience-card",
                     )
                     for role in EXPERIENCE["roles"]
                 ),
