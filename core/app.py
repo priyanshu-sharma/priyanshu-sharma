@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 from fasthtml.common import FastHTML, Meta, Style, Link
 from content import SITE
 from backend.server_config.styles import CSS
@@ -46,6 +47,7 @@ def create_app() -> FastHTML:
     register_pages(ui_app.route)
 
     ui_app.mount("/api", api_app)
+    ui_app.mount("/static", StaticFiles(directory="static"), name="static")
     return ui_app
 
 

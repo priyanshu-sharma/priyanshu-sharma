@@ -18,11 +18,11 @@ def experience_page():
                 *(
                     Article(
                         Header(
-                            H3(role["title"], style="margin:0; font-size:1.25rem;"),
+                            H3(role["title"]),
                         ),
                         P(role["summary"], cls="muted", style="margin:0.5rem 0 0;"),
                         P(role["details"], style="margin:1rem 0 0; font-size:0.9rem;"),
-                        cls="card",
+                        cls="card experience-card",
                     )
                     for role in EXPERIENCE["roles"]
                 ),

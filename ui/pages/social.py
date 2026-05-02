@@ -18,7 +18,7 @@ def social_page():
                 *(
                     Article(
                         Div(
-                            H3(item["name"], cls="section-label"),
+                            H3(item["name"], style="margin-bottom: 1rem;"),
                             P(item["description"], cls="muted"),
                             cls="flex-1",
                         ),

@@ -2,7 +2,15 @@ from fasthtml.common import *
 
 from content import PROFILE
 
-from .navigation import NAV_ITEMS
+NAV_ITEMS = [
+    ("/", "Home"),
+    ("/projects", "Projects"),
+    ("/products", "Products"),
+    ("/experience", "Experience"),
+    ("/blog", "Blog"),
+    ("/social", "Social"),
+    ("/contact", "Contact"),
+]
 
 
 def page_shell(title: str, active_path: str, *content):
@@ -11,11 +19,13 @@ def page_shell(title: str, active_path: str, *content):
         # Simplified navigation logic
         is_active = href == active_path
         cls = "btn btn-primary" if is_active else "btn"
-        nav_links.append(A(label, href=href, cls=cls))
+        attrs = {"aria-current": "page"} if is_active else {}
+        nav_links.append(A(label, href=href, cls=cls, **attrs))
 
     return (
         Title(title),
         Div(
+            Div(Div(cls="blob blob-1"), Div(cls="blob blob-2"), cls="bg-blobs"),
             Header(
                 Div(
                     A(Div(cls="avatar"), href="/"),
@@ -30,23 +40,20 @@ def page_shell(title: str, active_path: str, *content):
                         onclick="toggleTheme()",
                         aria_label="Toggle theme",
                     ),
+                    Script(src="/static/js/theme.js"),
                     Script("""
-                        function applyTheme(isDark) {
-                            document.body.classList.toggle('light-mode', !isDark);
-                            const themeToggle = document.querySelector('.theme-toggle');
-                            if (themeToggle) themeToggle.innerText = isDark ? '🌙' : '☀️';
-                            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+                        function copyToClipboard(text, btn) {
+                            navigator.clipboard.writeText(text);
+                            const originalText = btn.innerText;
+                            btn.innerText = '✓ Copied!';
+                            setTimeout(() => btn.innerText = originalText, 2000);
                         }
-                        function toggleTheme() {
-                            const isCurrentlyDark = !document.body.classList.contains('light-mode');
-                            applyTheme(!isCurrentlyDark);
-                        }
-                        const savedTheme = localStorage.getItem('theme') || 'dark';
-                        applyTheme(savedTheme === 'dark');
                     """),
                     cls="header-right",
+                    style="display:flex; align-items:center; gap:1rem;",
                 ),
                 cls="header",
+                style="display:flex; align-items:center; justify-content:space-between; padding: 1rem 0;",
             ),
             Nav(Div(*nav_links, cls="nav"), cls="header-nav"),
             Main(*content),
@@ -55,7 +62,6 @@ def page_shell(title: str, active_path: str, *content):
                     P(
                         PROFILE["availability"],
                         cls="muted",
-                        style="margin:0; font-size:0.875rem;",
                     ),
                     Div(
                         A(
@@ -66,7 +72,6 @@ def page_shell(title: str, active_path: str, *content):
                         A("Resume", href=PROFILE["resume_path"], cls="btn btn-primary"),
                         cls="btn-row",
                     ),
-                    style="display:flex; flex-direction:column; gap:1rem;",
                 ),
                 cls="footer",
             ),

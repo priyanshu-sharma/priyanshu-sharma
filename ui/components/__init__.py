@@ -1,4 +1,4 @@
-from .cards import metric_card, project_card
+from .cards import project_card
 from .layout import page_shell
 
-__all__ = ["metric_card", "project_card", "page_shell"]
+__all__ = ["project_card", "page_shell"]
