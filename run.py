@@ -6,9 +6,9 @@ def run() -> None:
         "gunicorn",
         [
             "gunicorn",
-            "app:app",
+            "core.app:core_app",
             "-c",
-            "server_config/gunicorn_conf.py",
+            "backend/server_config/gunicorn_conf.py",
         ],
     )
 
