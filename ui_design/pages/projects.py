@@ -1,6 +1,6 @@
 from fasthtml.common import *
 
-from ui.components import page_shell, project_card
+from ui_design.components import page_shell, project_card
 from content import PROFILE, PROJECTS
 
 

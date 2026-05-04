@@ -1,4 +1,4 @@
-from backend.server_config.settings import (
+from backend_api.server_config.settings import (
     BIND,
     WORKER_CLASS,
     RELOAD,

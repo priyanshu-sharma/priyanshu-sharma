@@ -1,6 +1,6 @@
 from fasthtml.common import *
 
-from ui.components import page_shell
+from ui_design.components import page_shell
 from content import PROFILE, SOCIAL
 
 
