@@ -29,9 +29,13 @@ def page_shell(title: str, active_path: str, *content):
             Header(
                 Div(
                     A(Div(cls="avatar"), href="/"),
-                    H1(PROFILE["name"], cls="h1"),
                     cls="header-left",
-                    style="display:flex; align-items:center; gap:1rem;",
+                    style="flex: 1; display: flex; align-items: center; justify-content: flex-start;",
+                ),
+                H1(
+                    PROFILE["name"],
+                    cls="h1",
+                    style="flex: 2; text-align: center; margin: 0; white-space: nowrap;",
                 ),
                 Div(
                     Button(
@@ -50,26 +54,25 @@ def page_shell(title: str, active_path: str, *content):
                         }
                     """),
                     cls="header-right",
-                    style="display:flex; align-items:center; gap:1rem;",
+                    style="flex: 1; display: flex; align-items: center; justify-content: flex-end;",
                 ),
                 cls="header",
                 style="display:flex; align-items:center; justify-content:space-between; padding: 1rem 0;",
             ),
-            Nav(Div(*nav_links, cls="nav"), cls="header-nav"),
+            Nav(
+                Div(*nav_links, Span(cls="nav-indicator"), cls="nav"), cls="header-nav"
+            ),
             Main(*content),
             Footer(
                 Div(
-                    P(
-                        PROFILE["availability"],
-                        cls="muted",
-                    ),
+                    P(PROFILE["availability"], style="margin-bottom: 1.5rem;"),
                     Div(
                         A(
-                            "Email",
+                            "Send Email",
                             href=f"mailto:{PROFILE['email']}",
                             cls="btn btn-primary",
                         ),
-                        A("Resume", href=PROFILE["resume_path"], cls="btn btn-primary"),
+                        A("Download Resume", href=PROFILE["resume_path"], cls="btn"),
                         cls="btn-row",
                     ),
                 ),

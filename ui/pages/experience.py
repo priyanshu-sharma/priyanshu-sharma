@@ -17,12 +17,11 @@ def experience_page():
             Div(
                 *(
                     Article(
-                        Header(
-                            H3(role["title"]),
-                        ),
+                        H3("Role"),
+                        H4(role["title"]),
                         P(role["summary"], cls="muted", style="margin:0.5rem 0 0;"),
                         P(role["details"], style="margin:1rem 0 0; font-size:0.9rem;"),
-                        cls="card experience-card",
+                        cls="card",
                     )
                     for role in EXPERIENCE["roles"]
                 ),

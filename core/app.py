@@ -17,7 +17,10 @@ def create_ui_app() -> FastHTML:
             Meta(name="keywords", content=SITE["keywords"]),
             Meta(property="og:title", content=SITE["title"]),
             Meta(property="og:description", content=SITE["description"]),
+            Meta(property="og:image", content=f"{SITE['url']}/static/og-image.png"),
+            Meta(property="og:url", content=SITE["url"]),
             Meta(property="og:type", content="website"),
+            Meta(name="twitter:card", content="summary_large_image"),
             Meta(name="theme-color", content="#000000"),
             Link(
                 rel="stylesheet",

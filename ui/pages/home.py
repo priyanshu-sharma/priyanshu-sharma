@@ -84,10 +84,10 @@ def home_page():
                     Div(H3("Projects"), P("6+ Production pipelines"), cls="bento-card"),
                     Div(
                         H3("Connect"),
-                        A(
-                            "Email Me",
-                            href=f"mailto:{PROFILE['email']}",
+                        Button(
+                            "Copy Email",
                             cls="btn btn-primary",
+                            onclick=f"copyToClipboard('{PROFILE['email']}', this)",
                         ),
                         cls="bento-card",
                     ),

@@ -17,18 +17,16 @@ def social_page():
             Div(
                 *(
                     Article(
-                        Div(
-                            H3(item["name"], style="margin-bottom: 1rem;"),
-                            P(item["description"], cls="muted"),
-                            cls="flex-1",
-                        ),
+                        H3("Social Platform"),
+                        H4(item["name"]),
+                        P(item["description"], cls="muted"),
                         A(
                             item["cta"],
                             href=item["href"],
                             cls="btn btn-primary",
                             style="margin-top:1rem; align-self: flex-start;",
                         ),
-                        cls="card flex-col",
+                        cls="card",
                     )
                     for item in SOCIAL["links"]
                 ),

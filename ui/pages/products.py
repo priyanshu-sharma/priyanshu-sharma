@@ -19,26 +19,26 @@ def products_page():
         Section(
             Div(
                 Article(
-                    H3("Data Platform Architecture", style="margin-bottom: 1rem;"),
+                    H3("Services"),
+                    H4("Data Platform Architecture"),
                     P(
-                        "End-to-end design of modern data stacks, focusing on Snowflake, BigQuery, and K8s.",
-                        cls="muted",
+                        "End-to-end design of modern data stacks, focusing on Snowflake, BigQuery, and K8s."
                     ),
                     cls="card",
                 ),
                 Article(
-                    H3("Pipeline Optimization", style="margin-bottom: 1rem;"),
+                    H3("Services"),
+                    H4("Pipeline Optimization"),
                     P(
-                        "Performance tuning for Spark and Airflow to reduce cloud costs and improve stability.",
-                        cls="muted",
+                        "Performance tuning for Spark and Airflow to reduce cloud costs and improve stability."
                     ),
                     cls="card",
                 ),
                 Article(
-                    H3("Data Quality & Governance", style="margin-bottom: 1rem;"),
+                    H3("Services"),
+                    H4("Data Quality & Governance"),
                     P(
-                        "Implementing automated testing, lineage tracking, and schema contract monitoring.",
-                        cls="muted",
+                        "Implementing automated testing, lineage tracking, and schema contract monitoring."
                     ),
                     cls="card",
                 ),

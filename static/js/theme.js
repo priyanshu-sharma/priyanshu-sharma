@@ -12,3 +12,23 @@ function toggleTheme() {
 
 const savedTheme = localStorage.getItem('theme') || 'dark';
 applyTheme(savedTheme === 'dark');
+
+document.addEventListener('DOMContentLoaded', () => {
+    const nav = document.querySelector('.nav');
+    const indicator = document.querySelector('.nav-indicator');
+    const activeLink = nav.querySelector('.btn-primary');
+
+    if (indicator && activeLink) {
+        function moveIndicator(el) {
+            indicator.style.width = `${el.offsetWidth}px`;
+            indicator.style.left = `${el.offsetLeft}px`;
+        }
+        
+        moveIndicator(activeLink);
+
+        nav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('mouseenter', () => moveIndicator(link));
+            link.addEventListener('mouseleave', () => moveIndicator(activeLink));
+        });
+    }
+});

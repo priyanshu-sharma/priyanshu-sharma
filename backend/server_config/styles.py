@@ -180,6 +180,12 @@ a:not(.btn):hover {
     transform: rotate(20deg) scale(1.1);
 }
 
+.h1 { 
+    font-size: 3rem; 
+    font-weight: 800; 
+    margin: 0; 
+}
+
 .header-nav { 
     margin-bottom: 4rem; 
 }
@@ -276,33 +282,30 @@ a:not(.btn):hover {
     font-weight: 700;
 }
 
-.experience-card h3 {
-    font-size: 0.75rem;
-}
-
 .card h3 {
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     color: var(--muted-foreground);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 700;
 }
 
-
 .card h4 {
     margin: 0;
-    font-size: 1.35rem;
+    font-size: 1.55rem;
     font-weight: 600;
     color: var(--foreground);
 }
 
 .card p {
     margin: 0;
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: 500;
     color: var(--foreground);
 }
+
 
 body.light-mode .card:hover {
     border-color: rgba(0, 0, 0, 0.1);
@@ -323,6 +326,21 @@ body.light-mode .card:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
+}
+
+/* Staggered Entrance */
+@media (prefers-reduced-motion: no-preference) {
+    .bento-grid > *, .top-row > * {
+        animation: fadeIn 0.6s ease-out forwards;
+        opacity: 0;
+    }
+    
+    .bento-grid > *:nth-child(1), .top-row > *:nth-child(1) { animation-delay: 0.1s; }
+    .bento-grid > *:nth-child(2), .top-row > *:nth-child(2) { animation-delay: 0.2s; }
+    .bento-grid > *:nth-child(3), .top-row > *:nth-child(3) { animation-delay: 0.3s; }
+    .bento-grid > *:nth-child(4), .top-row > *:nth-child(4) { animation-delay: 0.4s; }
+    .bento-grid > *:nth-child(5), .top-row > *:nth-child(5) { animation-delay: 0.5s; }
+    .bento-grid > *:nth-child(6), .top-row > *:nth-child(6) { animation-delay: 0.6s; }
 }
 
 .bento-card {
@@ -497,6 +515,14 @@ Main {
     backdrop-filter: blur(var(--glass-blur));
     -webkit-backdrop-filter: blur(var(--glass-blur));
     border: 1px solid var(--border);
+    font-size: 1.1rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer:hover { 
+    border-color: rgba(255, 255, 255, 0.2); 
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 /* Skeleton loader */
