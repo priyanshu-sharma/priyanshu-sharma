@@ -10,4 +10,4 @@ RUN uv sync
 COPY . .
 
 # Run the app
-CMD ["python", "run.py"]
+CMD ["uv", "run", "python", "run.py"]

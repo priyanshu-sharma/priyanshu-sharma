@@ -1,7 +1,7 @@
 from fasthtml.common import *
 
 from ui_design.components import page_shell
-from content import EXPERIENCE, PROFILE
+from backend_api.content_management.data import EXPERIENCE, PROFILE
 
 
 def experience_page():

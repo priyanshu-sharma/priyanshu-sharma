@@ -1,7 +1,7 @@
 from fasthtml.common import *
 
 from ui_design.components import page_shell, project_card
-from content import PROFILE, PROJECTS
+from backend_api.content_management.data import PROFILE, PROJECTS
 
 
 def projects_page():

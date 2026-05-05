@@ -1,7 +1,7 @@
 from fasthtml.common import *
 
 from ui_design.components import page_shell
-from content import HOME, PROFILE
+from backend_api.content_management.data import HOME, PROFILE
 
 
 def home_page():

@@ -3,8 +3,10 @@ import os
 
 def run() -> None:
     os.execvp(
-        "gunicorn",
+        "uv",
         [
+            "uv",
+            "run",
             "gunicorn",
             "core_app.app:core_app",
             "-c",
