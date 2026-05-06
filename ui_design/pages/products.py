@@ -42,6 +42,22 @@ def products_page():
                     ),
                     cls="card",
                 ),
+                Article(
+                    H3("Services"),
+                    H4("AI/ML Data Engineering"),
+                    P(
+                        "Curating large-scale datasets, RAG pipelines, and embedding workflows for LLM applications."
+                    ),
+                    cls="card",
+                ),
+                Article(
+                    H3("Services"),
+                    H4("Cloud Migration Strategy"),
+                    P(
+                        "Planning and execution of secure, cost-effective migrations from on-prem to cloud ecosystems."
+                    ),
+                    cls="card",
+                ),
                 style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;",
             ),
             cls="section",

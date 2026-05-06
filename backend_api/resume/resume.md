@@ -1,7 +1,8 @@
  (858) 305-8168   | spriyanshu723@gmail.com
 
 Priyanshu Sharma  
-Lead Big Data Engineer  
+Senior Data Engineer 2 
+
 +   PROFILE SUMMARY 
 
     • Versatile and Result-Oriented Big Data Engineer:
@@ -51,8 +52,30 @@ AWS:
     • Led the migration of complex on-premises data ecosystems to cloud-based architectures, enhancing scalability and reducing costs.
     • Developed robust data warehousing solutions using AWS Redshift and Azure SynapseDB for advanced analytics and business intelligence.
     • Orchestrated and optimized big data clusters using Azure HDInsight and Kubernetes, ensuring seamless data processing and resource management.
+
+
+
 +   TECHNICAL SKILLS
 
+    • Languages: Python, SQL(PostgreSQL, BigQuery, Snowflake Dialects), Bash, Scala, R.
+    • Cloud Platform: On-Premises, Amazon Web Services (AWS), Google Cloud Platform (GCP),
+    Azure, Oracle, Cloudera/Hortonworks Hadoop Environments.
+    • Data Engineering: Apache Spark (Structured Streaming, API, SQL), Apache Kafka, Apache
+    Flink, Delta Lake, Apache Iceberg, dbt, Pandas, Ray, Pyspark, Sqoop.
+    • Orchestration: Apache Airflow, Dagster, Prefect, AWS Step Functions, Azure Data Factory,
+    Logic Apps.
+    • Storage & Warehouse: Apache Druid, Snowflake, BigQuery, Redshift, Teradata, Amazon S3, Azure Data Lake Storage (ADLS), GCS, Delta Lake, Hive.
+    • Databases: PostgreSQL, MySQL, Oracle, AmazonRDS, Redis, MongoDB, Cassandra, HBase, DynamoDB, Bigtable.
+    • Infrastructure: Kubernetes (GKS/EKS), Docker, Terraform, Helm.
+    • Security & Ops: IAM, VPC, DLP, Jenkins, GitHub, GitLab, CI/CD Pipelines, Ansible.
+    • Visualization: Tableau, Power BI, QuickSight, Looker, Kibana, Data Studio, Grafana.
+    • Project Methods : Agile, Scrum, Test-Driven Development (TDD), Unit Testing, Functional
+    Testing, Design Thinking.
+    • AWS Data Services : Amazon EMR, AWS Glue, Amazon Kinesis, Amazon MSK (Kafka), AWS Lake
+    Formation, Amazon Redshift Spectrum, Amazon EC2, EMR, Lambda, Glue, Athena, MSK, SNS, SQS, CloudWatch, CDK.
+    • GCP Data Services : BigQuery, Dataflow, Dataproc, Pub/Sub, Cloud Storage, Vertex AI Pipelines.
+    • Azure Data Services: Azure Data Factory, Azure Databricks, Azure Synapse Analytics, Azure Stream Analytics, Azure Data Lake Storage.
+    • OCI Data Services: OCI Data Flow, OCI Object Storage, OCI Streaming, OCI Data Integration, Autonomous Data Warehouse, OCI Data Catalog.
     • Big Data Systems: Amazon Web Services (AWS), Azure, Google Cloud Platform (GCP), Cloudera Hadoop, Hortonworks Hadoop, Apache Spark, Spark Streaming, Apache Kafka, Hive, Amazon S3, AWS Kinesis 
     • Databases: Cassandra, HBase, DynamoDB, MongoDB, BigQuery, SQL, Hive, MySQL, Oracle, PL/SQL, RDBMS, AWS Redshift, Amazon RDS, Teradata, Snowflake 
     • Programming & Scripting: Python, Scala, PySpark, SQL, Java, Bash 
@@ -65,10 +88,23 @@ AWS:
     • Spark Framework: Spark API, Spark Streaming, Spark Structured Streaming, Spark SQL 
     • CI/CD Tools: Jenkins, GitHub, GitLab 
     • Project Methods: Agile, Scrum, DevOps, Continuous Integration (CI), Test-Driven Development (TDD), Unit Testing, Functional Testing, Design Thinking 
+
+
+
 +   PROFESSIONAL EXPERIENCE
 
-November 2024 – Present · Lead Data Engineer · Verizon, Basking Ridge, NJ 
+November 2024 – Present · Senior Data Engineer - II · Verizon, Basking Ridge, NJ 
 
+    • Owned and operated petabyte-scale, real-time data processing systems on-prem using Spark Structured Streaming with Kafka, enabling low-latency, high-throughput pipelines; implemented data transformations with dbt and built analytical data stores using Apache Druid for real-time querying.
+    • Built and optimized batch and streaming data pipelines using PySpark, Scala, Spark SQL/DataFrames, and Hive (HiveQL, partitions), incorporating CDC (Change Data Capture) to process high-volume structured and semi-structured data from MySQL, NoSQL, Snowflake, MongoDB, and REST APIs.
+    • Architected real-time data streaming systems using Kafka (MSK), Kinesis, and Spark Streaming, enabling reliable, low-latency data flow across Databricks, Redshift, Lambda, and downstream systems.
+    • Designed and orchestrated workflows using Apache Airflow (DAGs) and AWS Lambda; automated CI/CD pipelines with Jenkins and Terraform for infrastructure provisioning and deployment across Glue, EMR, Kinesis, and Redshift.
+    • Implemented robust observability and security practices using CloudWatch, CloudTrail, and Microsoft Intune, enforcing encryption, DLP, and access controls; ensured data integrity through rigorous ETL validation and testing.
+    • Developed GenAI-enabled data engineering workflows, preparing and curating large-scale datasets for LLM-based applications, and building pipelines to support model training, inference, and data retrieval use cases.
+    • Developed GenAI-powered data engineering systems by building end-to-end RAG (Retrieval-Augmented Generation) pipelines using vector databases (Pinecone / FAISS), embedding workflows with OpenAI and Hugging Face models, and orchestrating LLM workflows for enterprise search and data intelligence use cases.
+    • Engineered data pipelines to support LLM applications, including document ingestion, chunking, embedding generation, and retrieval pipelines using LangChain and LlamaIndex integrated with structured and streaming data sources.
+    • Led cross-functional teams and owned full data lifecycle (design → deployment), driving performance, scalability, and cost optimization across distributed systems and Big Data platforms.
+    • Built and optimized scalable, high-performance APIs to support real-time data access and ingestion across distributed data platforms, ensuring low-latency interaction between streaming and batch systems.
     • Directed the secure and efficient migration of data from on-premises data centres to the cloud (AWS) through a meticulously planned and executed strategy.
     • Streamlined migration deployment tasks by automating the CI/CD pipeline using Jenkins.
     • Implemented a scalable and cost-effective data storage solution on AWS S3.
@@ -104,8 +140,7 @@ November 2024 – Present · Lead Data Engineer · Verizon, Basking Ridge, NJ
     • Oversee end-to-end project lifecycle for Big Data initiatives, from requirement gathering and architecture design to development, testing, and deployment, ensuring timely delivery within scope and budget.
 
 
-January 2024 – October 2024 · Senior Data Engineer · Johnson & Johnson R&D, Raritan, NJ
-
+January 2024 – October 2024 · Senior Data Engineer I · Johnson & Johnson R&D, Raritan, NJ
 
     • Leveraged the Cloud Storage Transfer Service for swift and secure data movement between on-premises systems and GCP at J&J.
     • Engineered and sustained large-scale data processing and analysis pipelines with Apache Spark and Python on Google Cloud Platform (GCP).
@@ -142,8 +177,14 @@ January 2024 – October 2024 · Senior Data Engineer · Johnson & Johnson R&D, 
     • Integrate Scala-based applications with Big Data ecosystems, including Apache Hadoop, Hive, HBase, Cassandra, and others, to enable efficient data storage and retrieval. 
     • Utilized Google Cloud Composer to build and deploy data pipelines as DAGs using Apache Airflow.
     • Built a machine learning pipeline using Apache Spark and scikit-learn for training and deploying predictive models.
+    • Architected and implemented scalable data platforms on GCP, leveraging Cloud Storage Transfer Service, Cloud Storage (GCS), BigQuery, Bigtable, and Pub/Sub for secure ingestion, storage, and event-driven processing of structured and unstructured data.
+    • Built and optimized batch and real-time data pipelines using Apache Spark (Scala, PySpark), Dataflow, and Dataproc (YARN), integrating with Hive, Pig, Kafka, Hadoop, HBase, and Cassandra for large-scale distributed processing.
+    • Designed and orchestrated ETL/ELT workflows using Cloud Composer (Apache Airflow), including custom operators/sensors, CDC-based ingestion from Oracle, and automated pipeline scheduling and monitoring via Cloud Monitoring.
+    • Developed and governed data models across BigQuery and Snowflake, implementing DBT for transformation, schema evolution, data versioning, and data quality validation; enabled downstream analytics via Tableau, Looker, and Data Studio.
+    • Defined cross-platform data architecture integrating GCP, Snowflake, and Oracle; implemented infrastructure provisioning with Terraform, container orchestration with Kubernetes, and IAM-based access control for secure, cost-optimized environments.
+    • Led advanced analytics and ML workflows using Vertex AI Pipelines, Apache Spark, and scikit-learn; improved system performance and cost efficiency through Cloud Billing insights, resource optimization, and mentoring junior engineers on ETL and Snowflake best practices.
 
-April 2023 – December 2023 · Data Engineering Intern · Wells Fargo, New York City, NY 
+April 2023 – December 2023 · Senior Data Intern · Wells Fargo, New York City, NY 
 
     • Shifted ETL workflows and orchestration to Azure Data Factory for more efficient data movement.
     • Maintained data security during migration by leveraging Azure Active Directory & Key Vault for access control and encryption.
@@ -161,8 +202,24 @@ April 2023 – December 2023 · Data Engineering Intern · Wells Fargo, New York
     • Developed well-structured, maintainable Python and Scala code utilizing built-in Azure Databricks libraries to fulfil application requirements for data processing and analytics.
     • Automated the ETL process using UNIX shell scripts for scheduling, error handling, file operations, and data transfer via Azure Blob Storage.
     • Managed jobs and file systems using UNIX shell scripts within Azure Linux Virtual Machines.
+    • Migrated and orchestrated ETL workflows using Azure Data Factory, moving data from Oracle and SQL Server to Azure Blob Storage, Data Lake Storage, and Azure SQL Data Warehouse based on workload requirements.
+    • Built and optimized large-scale data processing pipelines using Azure Databricks (Scala, PySpark), leveraging RDD caching, DataFrames, and Spark transformations to process terabyte-scale datasets from Blob Storage and diverse sources (JSON, databases, structured files).
+    • Designed and optimized Hive-based data models on Azure HDInsight, implementing partitioning strategies for efficient data segmentation and improved query performance.
+    • Enabled real-time data processing using Azure Stream Analytics and orchestrated workflows with Logic Apps; ensured system observability and performance tracking via Azure Monitor.
+    • Implemented secure data access and migration practices using Azure Active Directory and Key Vault, ensuring encryption, access control, and data integrity across RDBMS (MySQL, SQL Server) and NoSQL systems.
+    • Developed automated data workflows and supporting infrastructure using Python, Scala, and UNIX shell scripting across Azure Linux VMs; delivered analytics solutions via Tableau and Power BI for business insights.
 
-January 2021 – September 2022 · Senior Data Engineer · Zomato, Bangalore, IN 
+December 2022 – March 2023 • Founding Data Intern • KayaPay (Stealth Startup) San Francisco, CA
+
+    • Designed and architected the end-to-end backend for the KayaConnect platform, enabling seamless communication between contractors (home constructors) and clients.
+    • Developed and deployed RESTful APIs for client onboarding, project management, and communication workflows; integrated backend services with a React + TypeScript frontend.
+    • Built cloud-native data ingestion and transformation workflows using patterns aligned with Oracle Cloud Infrastructure services such as Object Storage, Data Integration, and Data Flow (Apache Spark) for scalable data processing.
+    • Designed streaming and event-driven data pipelines inspired by OCI Streaming and Service Connector Hub, enabling real-time data movement and system decoupling.
+    • Modeled and managed structured data workflows aligned with Autonomous Data Warehouse and Oracle Database systems, supporting analytics and transactional use cases.
+    • Implemented metadata management and data discovery practices aligned with OCI Data Catalog to improve data visibility and governance.
+    • Applied observability patterns to OCI Logging and Monitoring to track system performance and debug data pipelines.
+
+January 2021 - September 2022 · Senior Software Engineer · Blinkit Bangalore, IN 
 
     • Applied AWS S3 for effective data collection and storage, enabling seamless access and processing of large datasets.
     • Transformed data using Amazon Athena for SQL processing and AWS Glue for Python processing, covering data cleaning, normalization, and standardization.
@@ -187,9 +244,15 @@ January 2021 – September 2022 · Senior Data Engineer · Zomato, Bangalore, IN
     • Loaded data from various sources (S3, DynamoDB) into Spark data frames and implemented in-memory data computation for efficient output generation.
     • Utilized Amazon EMR for processing Big Data across Hadoop clusters, alongside Amazon S3 for storage and Amazon Redshift for data warehousing.
     • Developed streaming applications using Apache Spark Streaming and Amazon Managed Streaming for Apache Kafka (Amazon MSK).
+    • Architected and scaled cloud-native data platforms on AWS using S3, Athena, Glue (Python), Redshift, and Databricks (PySpark), enabling efficient data collection, transformation, and analytics workflows.
+    • Built and orchestrated batch and streaming pipelines using AWS Step Functions, Kinesis, Apache Spark Streaming, and Amazon MSK (Kafka); executed large-scale Spark/Hadoop jobs on EMR with data sourced from S3 and DynamoDB.
+    • Developed and optimized ETL frameworks using AWS Glue, PySpark, and Python; translated SQL logic into Spark transformations and implemented in-memory data processing for high-performance workloads.
+    • Designed secure, scalable infrastructure using EC2 (load-balanced), Lambda (Python), and RDS/MySQL/NoSQL systems; implemented encryption, access controls, and fine-tuned database/query performance for high-throughput systems.
+    • Led data migration initiatives from legacy systems to MySQL and NoSQL databases, ensuring data integrity, security, and minimal downtime.
+    • Established observability and deployment pipelines using CloudWatch, CloudTrail, Jenkins, Code-Pipeline, and CodeDeploy; containerized Kafka (Confluent) workloads with secure subnet configurations and managed version control via Git.
 
 
-December 2018 – January 2021 ·  Data Engineer · Zomato, Bangalore, IN 
+January 2019 - December 2020 ·  Software Engineer · Blinkit, Bangalore, IN 
 
     • Conducted data profiling and transformation on raw datasets using Pig, Python, and Oracle to prepare data effectively.
     • Developed Hive external tables, populated them with data, and executed queries using HQL for efficient data retrieval and analysis.
@@ -205,6 +268,12 @@ December 2018 – January 2021 ·  Data Engineer · Zomato, Bangalore, IN
     • Enhanced and maintained critical B+ and R+ database indices for performance-sensitive services.
     • Migrated 10+ Elixir/Java/Python/.NET microservices to Managed RabbitMQ and Elasticache, reducing API latency by 27%.
     • Standardized Micro-Frontend Architecture across the UI using Runtime Module Federation, accelerating product iteration by 5-10%.
+    • Designed and built scalable data pipelines across the Hadoop ecosystem using Pig, Hive (HQL, external tables), HBase, and MapReduce; performed large-scale data profiling and transformation with Python and Oracle.
+    • Engineered high-throughput ingestion systems using Sqoop (RDBMS → HDFS, CSV) and Flume (real-time log streaming), processing millions of structured records.
+    • Optimized distributed data processing using Apache Spark (Spark Context, Spark SQL, DataFrames, Paired RDDs, YARN) with Scala, improving performance of legacy Hadoop workloads.
+    • Developed and orchestrated ETL pipelines using Apache NiFi, enabling automated, fault-tolerant data movement and transformation.
+    • Built and scaled distributed backend systems (30+ services) using Django, Spring Boot, and Go; implemented asynchronous processing with Python Celery, improving memory utilization by 8–12%, and applied CQRS with PostGIS integration for real-time, geospatial data processing.
+    • Led migration of 10+ microservices (Elixir, Java, Python, .NET) to Managed RabbitMQ and Elasticache, reducing API latency by 27%; improved database performance via B+ and R+ index optimization and standardized Micro-Frontend architecture using Runtime Module Federation to accelerate iteration by 5–10%.
 
 +   EDUCATION
 
@@ -213,3 +282,5 @@ University of California - Riverside, CA, US
 
 B.Tech. (Computer Science) 
 Vellore Institute of Technology, TN, India
+
+

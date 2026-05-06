@@ -1,7 +1,13 @@
 BLOG = {
     "title": "Blog",
-    "subtitle": "Short technical notes on data engineering and platform reliability.",
+    "subtitle": "Short technical notes on GenAI, data engineering, and platform reliability.",
     "posts": [
+        {
+            "date": "May 2026",
+            "title": "Scaling RAG Pipelines in Production",
+            "summary": "Lessons learned in deploying enterprise-grade RAG pipelines, managing vector database latency, and ensuring data freshness.",
+            "href": "#",
+        },
         {
             "date": "April 2026",
             "title": "Spark Job Tuning That Actually Reduced Costs",
@@ -22,8 +28,8 @@ BLOG = {
         },
         {
             "date": "January 2026",
-            "title": "Optimizing Snowflake for High Concurrency",
-            "summary": "Techniques for managing virtual warehouse size and caching to serve BI tools efficiently.",
+            "title": "Evaluating LLM Performance: Beyond Human Review",
+            "summary": "Implementing automated evaluation metrics for LLM-based data applications.",
             "href": "#",
         },
     ],

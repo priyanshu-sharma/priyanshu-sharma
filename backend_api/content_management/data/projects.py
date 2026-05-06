@@ -1,7 +1,19 @@
 PROJECTS = {
     "title": "Projects",
-    "subtitle": "Selected data engineering work delivered in production environments.",
+    "subtitle": "Selected data engineering and GenAI work delivered in production environments.",
     "items": [
+        {
+            "tag": "GenAI",
+            "title": "Enterprise RAG Pipeline",
+            "desc": "End-to-end retrieval-augmented generation pipeline using Pinecone, OpenAI, and LangChain for domain-specific search.",
+            "demo_href": "#",
+        },
+        {
+            "tag": "GenAI",
+            "title": "LLM Observability Suite",
+            "desc": "Built automated evaluation and monitoring workflows for tracking model hallucinations and prompt performance.",
+            "demo_href": "#",
+        },
         {
             "tag": "Realtime Platform",
             "title": "Streaming Ingestion Pipeline",
@@ -27,16 +39,16 @@ PROJECTS = {
             "demo_href": "https://example.com/contract-monitoring-demo",
         },
         {
-            "tag": "Infrastructure",
-            "title": "IaC Cluster Provisioner",
-            "desc": "Terraform modules for standardized K8s cluster lifecycle management across environments.",
-            "demo_href": "https://example.com/iac-demo",
-        },
-        {
             "tag": "Ops",
             "title": "Cost Anomaly Dashboard",
             "desc": "Real-time spend monitoring with automated Slack alerts for cloud resource over-allocation.",
             "demo_href": "https://example.com/cost-demo",
+        },
+        {
+            "tag": "Infrastructure",
+            "title": "IaC Cluster Provisioner",
+            "desc": "Terraform modules for standardized K8s cluster lifecycle management across environments.",
+            "demo_href": "https://example.com/iac-demo",
         },
     ],
 }

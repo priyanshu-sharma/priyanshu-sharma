@@ -37,11 +37,11 @@ def contact_page():
                 Div(
                     H3("Contact Details"),
                     H4("Phone"),
-                    P("+1 (555) 012-3456", style="margin-bottom: 1.5rem;"),
+                    P("+1 (858)-305-8168", style="margin-bottom: 1.5rem;"),
                     Button(
                         "Copy",
                         cls="btn btn-primary",
-                        onclick="copyToClipboard('+1 (555) 012-3456', this)",
+                        onclick="copyToClipboard('+1 (858)-305-8168', this)",
                     ),
                     style="display:flex; flex-direction:column; align-items:start;",
                     cls="card",
@@ -49,11 +49,11 @@ def contact_page():
                 Div(
                     H3("Contact Details"),
                     H4("Personal Email"),
-                    P("priyanshu@gmail.com", style="margin-bottom: 1.5rem;"),
+                    P("spriyanshu723@gmail.com", style="margin-bottom: 1.5rem;"),
                     Button(
                         "Copy",
                         cls="btn btn-primary",
-                        onclick="copyToClipboard('priyanshu@gmail.com', this)",
+                        onclick="copyToClipboard('spriyanshu723@gmail.com', this)",
                     ),
                     style="display:flex; flex-direction:column; align-items:start;",
                     cls="card",
