@@ -3,10 +3,14 @@ name = "priyanshu-sharma"
 version = "0.1.0"
 requires-python = ">=3.14"
 dependencies = [
+    "django>=6.0.4",
     "fastapi>=0.136.1",
     "gunicorn>=25.3.0",
     "python-fasthtml",
     "uvicorn",
+    "pydantic-settings",
+    "dj-database-url",
+    "python-dotenv",
 ]
 
 [dependency-groups]
@@ -14,6 +18,7 @@ dev = [
     "black>=26.3.1",
     "pre-commit>=4.6.0",
     "ruff>=0.15.12",
+    "pytest",
 ]
 
 [tool.black]

@@ -3,12 +3,14 @@ import os
 
 def run() -> None:
     os.execvp(
-        "gunicorn",
+        "uv",
         [
+            "uv",
+            "run",
             "gunicorn",
-            "core.app:core_app",
+            "core_app.app:core_app",
             "-c",
-            "backend/server_config/gunicorn_conf.py",
+            "core_app/gunicorn_conf.py",
         ],
     )
 
