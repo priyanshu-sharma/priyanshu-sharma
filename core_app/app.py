@@ -56,6 +56,12 @@ def create_ui_app(api_app: FastAPI) -> FastHTML:
             Meta(property="og:type", content="website"),
             Meta(name="twitter:card", content="summary_large_image"),
             Meta(name="theme-color", content="#000000"),
+            Script("""
+                (function() {
+                    const savedTheme = localStorage.getItem('theme') || 'dark';
+                    document.body.classList.toggle('light-mode', savedTheme === 'light');
+                })();
+            """),
             Script(src="/static/js/theme.js"),
             Link(
                 rel="stylesheet",
