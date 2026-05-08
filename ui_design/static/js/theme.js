@@ -10,8 +10,12 @@ function toggleTheme() {
     applyTheme(!isCurrentlyDark);
 }
 
-const savedTheme = localStorage.getItem('theme') || 'dark';
-applyTheme(savedTheme === 'dark');
+// Ensure the UI button matches the state on load
+document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    const themeToggle = document.querySelector('.theme-toggle');
+    if (themeToggle) themeToggle.innerText = (savedTheme === 'dark') ? '🌙' : '☀️';
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     const nav = document.querySelector('.nav');
