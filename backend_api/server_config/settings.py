@@ -18,7 +18,7 @@ from .env_settings import settings
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Gunicorn configuration settings
-BIND_HOST = "127.0.0.1"
+BIND_HOST = "0.0.0.0"
 BIND_PORT = 4000
 BIND = f"{BIND_HOST}:{BIND_PORT}"
 WORKER_CLASS = "uvicorn.workers.UvicornWorker"
