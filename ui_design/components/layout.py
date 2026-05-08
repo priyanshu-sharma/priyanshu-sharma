@@ -44,7 +44,6 @@ def page_shell(title: str, active_path: str, *content):
                         onclick="toggleTheme()",
                         aria_label="Toggle theme",
                     ),
-                    Script(src="/static/js/theme.js"),
                     Script("""
                         function copyToClipboard(text, btn) {
                             navigator.clipboard.writeText(text);

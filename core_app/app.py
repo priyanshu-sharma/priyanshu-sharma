@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
-from fasthtml.common import FastHTML, Meta, Style, Link
+from fasthtml.common import FastHTML, Meta, Style, Link, Script
 from contextlib import asynccontextmanager
 from backend_api.content_management.data import SITE
 from backend_api.server_config.styles import CSS
@@ -56,6 +56,7 @@ def create_ui_app(api_app: FastAPI) -> FastHTML:
             Meta(property="og:type", content="website"),
             Meta(name="twitter:card", content="summary_large_image"),
             Meta(name="theme-color", content="#000000"),
+            Script(src="/static/js/theme.js"),
             Link(
                 rel="stylesheet",
                 href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
