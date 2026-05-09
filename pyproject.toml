@@ -33,4 +33,4 @@ target-version = "py314"
 ignore = ["F403", "F405"]
 
 [tool.fastapi]
-entrypoint = "main:app"
+entrypoint = "core_app.app:core_app"
