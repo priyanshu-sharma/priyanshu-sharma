@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 
 import multiprocessing
 from pathlib import Path
-from .env_settings import settings
+from backend_api.server_config.env_settings import settings
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -90,7 +90,7 @@ WSGI_APPLICATION = "server_config.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": settings.project_root / "db.sqlite3",
+        "NAME": settings.project_root / "databases/db.sqlite3",
     }
 }
 
@@ -129,4 +129,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = "/static/"
+STATICFILES_DIRS = [
+    settings.project_root / "ui_design/static",
+]
+STATIC_ROOT = settings.project_root / "staticfiles"
+STATIC_DIR = STATICFILES_DIRS[0]

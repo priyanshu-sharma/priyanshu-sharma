@@ -4,7 +4,7 @@ version = "0.1.0"
 requires-python = ">=3.14"
 dependencies = [
     "django>=6.0.4",
-    "fastapi>=0.136.1",
+    "fastapi[standard]>=0.136.1",
     "gunicorn>=25.3.0",
     "python-fasthtml",
     "uvicorn",
@@ -31,3 +31,6 @@ target-version = "py314"
 
 [tool.ruff.lint]
 ignore = ["F403", "F405"]
+
+[tool.fastapi]
+entrypoint = "core_app.app:core_app"

@@ -4,17 +4,16 @@ from fasthtml.common import FastHTML, Meta, Style, Link
 from contextlib import asynccontextmanager
 from backend_api.content_management.data import SITE
 from backend_api.server_config.styles import CSS
-from backend_api.server_config.env_settings import settings
+from backend_api.server_config.settings import DEBUG, STATIC_DIR
 from backend_api.server_config import health_router
 from backend_api.django_init import setup_django
 from ui_design.pages import register_pages
-
-STATIC_DIR = settings.project_root / "ui_design" / "static"
 
 
 @asynccontextmanager
 async def api_lifespan(app: FastAPI):
     print("-----------------🔥 Starting Backend API-----------------")
+    setup_django()
     yield
     print("-----------------🛑 Closing Backend API------------------")
 
@@ -25,7 +24,7 @@ def create_api_app() -> FastAPI:
         description=SITE["api_description"],
         version=SITE["api_version"],
         lifespan=api_lifespan,
-        debug=settings.debug,
+        debug=DEBUG,
     )
     api_app.include_router(health_router)
     return api_app
@@ -34,7 +33,6 @@ def create_api_app() -> FastAPI:
 async def ui_lifespan(app: FastHTML):
     print("-----------------🔥 Starting UI Design-----------------")
 
-    setup_django()
     async with api_lifespan(app):
         yield
 
