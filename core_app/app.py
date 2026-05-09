@@ -1,3 +1,4 @@
+import subprocess
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fasthtml.common import FastHTML, Meta, Style, Link
@@ -15,6 +16,8 @@ STATIC_DIR = settings.project_root / "ui_design" / "static"
 @asynccontextmanager
 async def api_lifespan(app: FastAPI):
     print("-----------------🔥 Starting Backend API-----------------")
+    setup_django()
+    subprocess.run(["uv", "run", "python", "manage.py", "migrate"], check=True)
     yield
     print("-----------------🛑 Closing Backend API------------------")
 
@@ -34,7 +37,6 @@ def create_api_app() -> FastAPI:
 async def ui_lifespan(app: FastHTML):
     print("-----------------🔥 Starting UI Design-----------------")
 
-    setup_django()
     async with api_lifespan(app):
         yield
 

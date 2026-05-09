@@ -1,11 +1,7 @@
 import os
-import subprocess
 
 
 def run() -> None:
-    # Run migrations
-    subprocess.run(["uv", "run", "python", "manage.py", "migrate"], check=True)
-
     # Start the application
     os.execvp(
         "uv",

@@ -31,3 +31,6 @@ target-version = "py314"
 
 [tool.ruff.lint]
 ignore = ["F403", "F405"]
+
+[tool.fastapi]
+entrypoint = "main:app"
