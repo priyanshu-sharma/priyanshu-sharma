@@ -4,13 +4,11 @@ from fasthtml.common import FastHTML, Meta, Style, Link
 from contextlib import asynccontextmanager
 from backend_api.content_management.data import SITE
 from backend_api.server_config.styles import CSS
-from backend_api.server_config.env_settings import settings
+from backend_api.server_config.settings import DEBUG, STATIC_DIR
 from backend_api.server_config import health_router
 from backend_api.django_init import setup_django
 from databases.db_migrate import db_migrate
 from ui_design.pages import register_pages
-
-STATIC_DIR = settings.project_root / "ui_design" / "static"
 
 
 @asynccontextmanager
@@ -28,7 +26,7 @@ def create_api_app() -> FastAPI:
         description=SITE["api_description"],
         version=SITE["api_version"],
         lifespan=api_lifespan,
-        debug=settings.debug,
+        debug=DEBUG,
     )
     api_app.include_router(health_router)
     return api_app

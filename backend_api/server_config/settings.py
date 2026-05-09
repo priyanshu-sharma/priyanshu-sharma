@@ -90,7 +90,7 @@ WSGI_APPLICATION = "server_config.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": settings.project_root / "db.sqlite3",
+        "NAME": settings.project_root / "databases/db.sqlite3",
     }
 }
 
@@ -129,4 +129,5 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_DIR = settings.project_root / "ui_design/static"
+STATIC_URL = STATIC_DIR = settings.project_root / "ui_design/static"
