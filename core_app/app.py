@@ -7,7 +7,6 @@ from backend_api.server_config.styles import CSS
 from backend_api.server_config.settings import DEBUG, STATIC_DIR
 from backend_api.server_config import health_router
 from backend_api.django_init import setup_django
-from databases.db_migrate import db_migrate
 from ui_design.pages import register_pages
 
 
@@ -15,7 +14,6 @@ from ui_design.pages import register_pages
 async def api_lifespan(app: FastAPI):
     print("-----------------🔥 Starting Backend API-----------------")
     setup_django()
-    db_migrate()
     yield
     print("-----------------🛑 Closing Backend API------------------")
 

@@ -1,7 +1,11 @@
 import os
+from databases.db_migrate import db_migrate
 
 
 def run() -> None:
+    # Run database migrations before starting the application
+    db_migrate()
+
     # Start the application
     os.execvp(
         "uv",

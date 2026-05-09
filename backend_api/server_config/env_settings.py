@@ -11,7 +11,6 @@ PROJECT_ROOT = ENV_SETTINGS_DIR.parent.parent
 class Settings(BaseSettings):
     debug: bool = False
     secret_key: str = "django-insecure-default"
-    database_url: str = "sqlite:///db.sqlite3"
     project_root: Path = PROJECT_ROOT
 
     model_config = SettingsConfigDict(env_file=".env")
