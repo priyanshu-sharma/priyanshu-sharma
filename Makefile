@@ -1,7 +1,4 @@
-.PHONY: run startapp format lint fix precommit precommit-install clean test migrate makemigrations_content_management
-
-run:
-	uv run python run.py
+.PHONY: startapp format lint fix precommit precommit-install clean test migrate makemigrations_content_management
 
 startapp:
 	uv run python run.py
