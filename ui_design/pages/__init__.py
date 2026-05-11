@@ -6,6 +6,7 @@ from .projects import projects_page
 from .products import products_page
 from .resume import resume_page
 from .social import social_page
+from .gallery import gallery_page
 
 
 def register_pages(rt):
@@ -18,6 +19,7 @@ def register_pages(rt):
         "/blog": blog_page,
         "/social": social_page,
         "/resume": resume_page,
+        "/gallery": gallery_page,
     }
     for path, func in routes.items():
         rt(path)(func)

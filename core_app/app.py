@@ -8,16 +8,26 @@ from backend_api.server_config.settings import DEBUG, STATIC_DIR
 from backend_api.server_config import health_router
 from backend_api.django_init import setup_django
 from ui_design.pages import register_pages
-from databases import clear_redis
+from databases.init_redis import verify_redis, clear_redis
+
+import time
+from fastapi import Request
+from backend_api.server_config.logging import setup_logging
+import structlog
+
+log = structlog.get_logger()
 
 
+# Middleware for request latency
 @asynccontextmanager
 async def api_lifespan(app: FastAPI):
-    print("-----------------🔥 Starting Backend API-----------------")
+    setup_logging()
+    log.info("starting_backend_api")
+    verify_redis()
     setup_django()
     yield
     clear_redis()
-    print("-----------------🛑 Closing Backend API------------------")
+    log.info("closing_backend_api")
 
 
 def create_api_app() -> FastAPI:
@@ -29,6 +39,21 @@ def create_api_app() -> FastAPI:
         debug=DEBUG,
     )
     api_app.include_router(health_router)
+
+    @api_app.middleware("http")
+    async def log_requests(request: Request, call_next):
+        start_time = time.time()
+        response = await call_next(request)
+        duration = time.time() - start_time
+        log.info(
+            "http_request",
+            method=request.method,
+            path=request.url.path,
+            duration=f"{duration:.4f}s",
+            status_code=response.status_code,
+        )
+        return response
+
     return api_app
 
 
