@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Priyanshu Sharma",
+    "title": "Priyanshu Sharma | Senior Data Engineer | Machine Learning Specialist | Full Stack Developer",
+    "description": "Priyanshu Sharma is a Senior Data Engineer building reliable data systems with Python, Spark, Airflow, Kafka, dbt, and cloud infrastructure.",
+    "author": "Priyanshu Sharma",
+    "keywords": "Priyanshu Sharma, Senior Data Engineer, Python, Spark, Airflow, Kafka, dbt",
+    "url": "http://127.0.0.1:4000",
+    "api_title": "Priyanshu Sharma API",
+    "api_description": "API routes for the Priyanshu Sharma portfolio site.",
+    "api_version": "1.0.0",
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-10T23:24:35.835594",
+    "update_ts": "2026-05-10T23:24:35.835594"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "name": "LinkedIn",
+    "description": "Professional updates, role history, and data engineering highlights.",
+    "href": "https://www.linkedin.com/in/priyanshu-sharma-793795110/",
+    "cta": "Open LinkedIn",
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-10T23:24:35.880950",
+    "update_ts": "2026-05-10T23:24:35.880950"
+  },
+  {
+    "name": "GitHub",
+    "description": "Code samples, project repositories, and experiments.",
+    "href": "https://github.com/priyanshu-sharma",
+    "cta": "Open GitHub",
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-10T23:24:35.880950",
+    "update_ts": "2026-05-10T23:24:35.880950"
+  },
+  {
+    "name": "X / Twitter",
+    "description": "Short updates, threads, and links to technical writing.",
+    "href": "https://x.com/anshu1297",
+    "cta": "Open X",
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-10T23:24:35.880950",
+    "update_ts": "2026-05-10T23:24:35.880950"
+  },
+  {
+    "name": "Substack",
+    "description": "Deep-dive technical newsletters on data systems architecture.",
+    "href": "https://substack.com",
+    "cta": "Read Newsletter",
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-10T23:24:35.880950",
+    "update_ts": "2026-05-10T23:24:35.880950"
+  },
+  {
+    "name": "Email",
+    "description": "Direct contact for opportunities and consulting work.",
+    "href": "mailto:spriyanshu723@gmail.com",
+    "cta": "Send Email",
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-10T23:24:35.880950",
+    "update_ts": "2026-05-10T23:24:35.880950"
+  }
+]

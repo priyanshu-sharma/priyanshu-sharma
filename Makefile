@@ -1,4 +1,4 @@
-.PHONY: startapp format lint fix precommit precommit-install clean test migrate makemigrations_content_management
+.PHONY: startapp format lint fix precommit precommit-install clean test migrate makemigrations_content_management load-fixtures
 
 startapp:
 	uv run python run.py
@@ -42,3 +42,6 @@ make-migrations:
 	uv run python manage.py makemigrations
 	uv run python manage.py migrate
 	uv run python manage.py showmigrations
+
+load-fixtures:
+	uv run python manage.py loaddata backend_api/fixtures/*.json
