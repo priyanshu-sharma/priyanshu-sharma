@@ -8,6 +8,7 @@ from backend_api.server_config.settings import DEBUG, STATIC_DIR
 from backend_api.server_config import health_router
 from backend_api.django_init import setup_django
 from ui_design.pages import register_pages
+from databases import clear_redis
 
 
 @asynccontextmanager
@@ -15,6 +16,7 @@ async def api_lifespan(app: FastAPI):
     print("-----------------🔥 Starting Backend API-----------------")
     setup_django()
     yield
+    clear_redis()
     print("-----------------🛑 Closing Backend API------------------")
 
 

@@ -7,7 +7,9 @@
     "created_by": "system",
     "updated_by": "system",
     "install_ts": "2026-05-10T23:24:35.542297",
-    "update_ts": "2026-05-10T23:24:35.542297"
+    "update_ts": "2026-05-10T23:24:35.542297",
+    "uuid": "b1cee796fc1c4e1baffeab8e3a05352b",
+    "active": true
   },
   {
     "date": "April 2026",
@@ -17,7 +19,9 @@
     "created_by": "system",
     "updated_by": "system",
     "install_ts": "2026-05-10T23:24:35.542297",
-    "update_ts": "2026-05-10T23:24:35.542297"
+    "update_ts": "2026-05-10T23:24:35.542297",
+    "uuid": "e59deab312dc4fd2881c0295b9f734f2",
+    "active": true
   },
   {
     "date": "March 2026",
@@ -27,7 +31,9 @@
     "created_by": "system",
     "updated_by": "system",
     "install_ts": "2026-05-10T23:24:35.542297",
-    "update_ts": "2026-05-10T23:24:35.542297"
+    "update_ts": "2026-05-10T23:24:35.542297",
+    "uuid": "0c7b021cc48842af8593520c78366ca2",
+    "active": true
   },
   {
     "date": "February 2026",
@@ -37,7 +43,9 @@
     "created_by": "system",
     "updated_by": "system",
     "install_ts": "2026-05-10T23:24:35.542297",
-    "update_ts": "2026-05-10T23:24:35.542297"
+    "update_ts": "2026-05-10T23:24:35.542297",
+    "uuid": "8c96d74110334cc2a60fd19db5be37d9",
+    "active": true
   },
   {
     "date": "January 2026",
@@ -47,6 +55,8 @@
     "created_by": "system",
     "updated_by": "system",
     "install_ts": "2026-05-10T23:24:35.542297",
-    "update_ts": "2026-05-10T23:24:35.542297"
+    "update_ts": "2026-05-10T23:24:35.542297",
+    "uuid": "61968aa8eefa4fb0b86bbddec36979b6",
+    "active": true
   }
 ]

@@ -7,7 +7,9 @@
     "created_by": "system",
     "updated_by": "system",
     "install_ts": "2026-05-10T23:24:35.880950",
-    "update_ts": "2026-05-10T23:24:35.880950"
+    "update_ts": "2026-05-10T23:24:35.880950",
+    "uuid": "15c22c4a1073414c81373e9d1b6b7039",
+    "active": true
   },
   {
     "name": "GitHub",
@@ -17,7 +19,9 @@
     "created_by": "system",
     "updated_by": "system",
     "install_ts": "2026-05-10T23:24:35.880950",
-    "update_ts": "2026-05-10T23:24:35.880950"
+    "update_ts": "2026-05-10T23:24:35.880950",
+    "uuid": "9edce493b6b54bdfabf4daafb181814b",
+    "active": true
   },
   {
     "name": "X / Twitter",
@@ -27,7 +31,9 @@
     "created_by": "system",
     "updated_by": "system",
     "install_ts": "2026-05-10T23:24:35.880950",
-    "update_ts": "2026-05-10T23:24:35.880950"
+    "update_ts": "2026-05-10T23:24:35.880950",
+    "uuid": "000ee7d8a5ba4107b50075a1de384a10",
+    "active": true
   },
   {
     "name": "Substack",
@@ -37,7 +43,9 @@
     "created_by": "system",
     "updated_by": "system",
     "install_ts": "2026-05-10T23:24:35.880950",
-    "update_ts": "2026-05-10T23:24:35.880950"
+    "update_ts": "2026-05-10T23:24:35.880950",
+    "uuid": "5fcde9772018440983b16f6dcb890d7b",
+    "active": true
   },
   {
     "name": "Email",
@@ -47,6 +55,8 @@
     "created_by": "system",
     "updated_by": "system",
     "install_ts": "2026-05-10T23:24:35.880950",
-    "update_ts": "2026-05-10T23:24:35.880950"
+    "update_ts": "2026-05-10T23:24:35.880950",
+    "uuid": "8890bb6b7b1a4dbb8d0a7e57b2186afa",
+    "active": true
   }
 ]

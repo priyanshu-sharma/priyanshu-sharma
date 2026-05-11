@@ -44,4 +44,4 @@ make-migrations:
 	uv run python manage.py showmigrations
 
 load-fixtures:
-	uv run python manage.py loaddata backend_api/fixtures/*.json
+	uv run python databases/init_redis.py

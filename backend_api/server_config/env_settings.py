@@ -13,6 +13,11 @@ class Settings(BaseSettings):
     secret_key: str = "django-insecure-default"
     project_root: Path = PROJECT_ROOT
 
+    redis_host: str = "localhost"
+    redis_port: int = 6379
+    redis_db: int = 0
+    redis_store_name: str = "portfolio_store"
+
     model_config = SettingsConfigDict(env_file=".env")
 
 

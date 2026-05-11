@@ -7,7 +7,9 @@
     "created_by": "system",
     "updated_by": "system",
     "install_ts": "2026-05-10T23:24:35.634837",
-    "update_ts": "2026-05-10T23:24:35.634837"
+    "update_ts": "2026-05-10T23:24:35.634837",
+    "uuid": "566f2e8c15df4eee9e63153660e0c124",
+    "active": true
   },
   {
     "title": "Senior Data Engineer I",
@@ -17,7 +19,9 @@
     "created_by": "system",
     "updated_by": "system",
     "install_ts": "2026-05-10T23:24:35.634837",
-    "update_ts": "2026-05-10T23:24:35.634837"
+    "update_ts": "2026-05-10T23:24:35.634837",
+    "uuid": "614e0d847f2244c68e80a64a7169d33b",
+    "active": true
   },
   {
     "title": "Senior Data Intern",
@@ -27,7 +31,9 @@
     "created_by": "system",
     "updated_by": "system",
     "install_ts": "2026-05-10T23:24:35.634837",
-    "update_ts": "2026-05-10T23:24:35.634837"
+    "update_ts": "2026-05-10T23:24:35.634837",
+    "uuid": "8011bbf43bbc41718dedd791bc861625",
+    "active": true
   },
   {
     "title": "Founding Data Intern",
@@ -37,7 +43,9 @@
     "created_by": "system",
     "updated_by": "system",
     "install_ts": "2026-05-10T23:24:35.634837",
-    "update_ts": "2026-05-10T23:24:35.634837"
+    "update_ts": "2026-05-10T23:24:35.634837",
+    "uuid": "077dc929776144248ab47545a4cc837b",
+    "active": true
   },
   {
     "title": "Senior Software Engineer",
@@ -47,7 +55,9 @@
     "created_by": "system",
     "updated_by": "system",
     "install_ts": "2026-05-10T23:24:35.634837",
-    "update_ts": "2026-05-10T23:24:35.634837"
+    "update_ts": "2026-05-10T23:24:35.634837",
+    "uuid": "760f36bc8b3c4d5f910a3cb74ac9d0b9",
+    "active": true
   },
   {
     "title": "Software Engineer",
@@ -57,6 +67,8 @@
     "created_by": "system",
     "updated_by": "system",
     "install_ts": "2026-05-10T23:24:35.634837",
-    "update_ts": "2026-05-10T23:24:35.634837"
+    "update_ts": "2026-05-10T23:24:35.634837",
+    "uuid": "f4b21fe7b0bb4ff68676df123371e8c8",
+    "active": true
   }
 ]

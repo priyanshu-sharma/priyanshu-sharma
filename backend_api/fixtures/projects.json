@@ -7,7 +7,9 @@
     "created_by": "system",
     "updated_by": "system",
     "install_ts": "2026-05-10T23:24:35.783216",
-    "update_ts": "2026-05-10T23:24:35.783216"
+    "update_ts": "2026-05-10T23:24:35.783216",
+    "uuid": "f2928705f99d4e5695dbfbd1557a9371",
+    "active": true
   },
   {
     "tag": "GenAI",
@@ -17,7 +19,9 @@
     "created_by": "system",
     "updated_by": "system",
     "install_ts": "2026-05-10T23:24:35.783216",
-    "update_ts": "2026-05-10T23:24:35.783216"
+    "update_ts": "2026-05-10T23:24:35.783216",
+    "uuid": "58fee02f0c654a84bfe58f3260d2848b",
+    "active": true
   },
   {
     "tag": "Realtime Platform",
@@ -27,7 +31,9 @@
     "created_by": "system",
     "updated_by": "system",
     "install_ts": "2026-05-10T23:24:35.783216",
-    "update_ts": "2026-05-10T23:24:35.783216"
+    "update_ts": "2026-05-10T23:24:35.783216",
+    "uuid": "a6f06635e2c543babe47338aa4af3237",
+    "active": true
   },
   {
     "tag": "Analytics",
@@ -37,7 +43,9 @@
     "created_by": "system",
     "updated_by": "system",
     "install_ts": "2026-05-10T23:24:35.783216",
-    "update_ts": "2026-05-10T23:24:35.783216"
+    "update_ts": "2026-05-10T23:24:35.783216",
+    "uuid": "0979b50045d146f9b16a1437075d3cec",
+    "active": true
   },
   {
     "tag": "Machine Learning",
@@ -47,7 +55,9 @@
     "created_by": "system",
     "updated_by": "system",
     "install_ts": "2026-05-10T23:24:35.783216",
-    "update_ts": "2026-05-10T23:24:35.783216"
+    "update_ts": "2026-05-10T23:24:35.783216",
+    "uuid": "0e352b2cd4864c1cba3fda3d9d590688",
+    "active": true
   },
   {
     "tag": "Data Quality",
@@ -57,7 +67,9 @@
     "created_by": "system",
     "updated_by": "system",
     "install_ts": "2026-05-10T23:24:35.783216",
-    "update_ts": "2026-05-10T23:24:35.783216"
+    "update_ts": "2026-05-10T23:24:35.783216",
+    "uuid": "4240ef013d7541e39d502ea2c300d177",
+    "active": true
   },
   {
     "tag": "Ops",
@@ -67,7 +79,9 @@
     "created_by": "system",
     "updated_by": "system",
     "install_ts": "2026-05-10T23:24:35.783216",
-    "update_ts": "2026-05-10T23:24:35.783216"
+    "update_ts": "2026-05-10T23:24:35.783216",
+    "uuid": "dfb1bb4b179b43669b6502ab5e70ca92",
+    "active": true
   },
   {
     "tag": "Infrastructure",
@@ -77,6 +91,8 @@
     "created_by": "system",
     "updated_by": "system",
     "install_ts": "2026-05-10T23:24:35.783216",
-    "update_ts": "2026-05-10T23:24:35.783216"
+    "update_ts": "2026-05-10T23:24:35.783216",
+    "uuid": "1e8f9e40113344d38aa3e25d7b8566ef",
+    "active": true
   }
 ]
