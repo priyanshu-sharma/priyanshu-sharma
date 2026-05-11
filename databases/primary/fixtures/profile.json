@@ -1,0 +1,16 @@
+[
+  {
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-11 12:08:08.629405",
+    "update_ts": "2026-05-11 12:08:08.629405",
+    "schema_version": 1,
+    "uuid": "e46e2bc5ed5540dba776876740194ab0",
+    "active": true,
+    "name": "Priyanshu Sharma",
+    "role": "Senior Data Engineer | Machine Learning Specialist | Full Stack Developer",
+    "email": "spriyanshu723@gmail.com",
+    "resume_path": "/resume",
+    "availability": "Open to Senior Data Engineer roles and consulting engagements."
+  }
+]

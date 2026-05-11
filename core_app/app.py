@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fasthtml.common import FastHTML, Meta, Style, Link
 from contextlib import asynccontextmanager
-from backend_api.content_management.data import SITE
+from databases.primary.content import SITE
 from backend_api.server_config.styles import CSS
 from backend_api.server_config.settings import DEBUG, STATIC_DIR
 from backend_api.server_config import health_router

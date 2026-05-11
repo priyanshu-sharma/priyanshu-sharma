@@ -1,0 +1,67 @@
+[
+  {
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-11 12:08:08.630577",
+    "update_ts": "2026-05-11 12:08:08.630577",
+    "schema_version": 1,
+    "uuid": "3c49d6be9cc24cf5bd58bf4376f63bca",
+    "active": true,
+    "name": "LinkedIn",
+    "description": "Professional updates, role history, and data engineering highlights.",
+    "href": "https://www.linkedin.com/in/priyanshu-sharma-793795110/",
+    "cta": "Open LinkedIn"
+  },
+  {
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-11 12:08:08.630632",
+    "update_ts": "2026-05-11 12:08:08.630632",
+    "schema_version": 1,
+    "uuid": "f91334bfc4b7457997695725e1652b1b",
+    "active": true,
+    "name": "GitHub",
+    "description": "Code samples, project repositories, and experiments.",
+    "href": "https://github.com/priyanshu-sharma",
+    "cta": "Open GitHub"
+  },
+  {
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-11 12:08:08.630662",
+    "update_ts": "2026-05-11 12:08:08.630662",
+    "schema_version": 1,
+    "uuid": "c79b90fb118046229c92e7c89823c635",
+    "active": true,
+    "name": "X / Twitter",
+    "description": "Short updates, threads, and links to technical writing.",
+    "href": "https://x.com/anshu1297",
+    "cta": "Open X"
+  },
+  {
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-11 12:08:08.630691",
+    "update_ts": "2026-05-11 12:08:08.630691",
+    "schema_version": 1,
+    "uuid": "d10ad7a0642a49d5a7e9178d272b074c",
+    "active": true,
+    "name": "Substack",
+    "description": "Deep-dive technical newsletters on data systems architecture.",
+    "href": "https://substack.com",
+    "cta": "Read Newsletter"
+  },
+  {
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-11 12:08:08.630717",
+    "update_ts": "2026-05-11 12:08:08.630717",
+    "schema_version": 1,
+    "uuid": "5e5a88a322cc440a94b3eeb160312c53",
+    "active": true,
+    "name": "Email",
+    "description": "Direct contact for opportunities and consulting work.",
+    "href": "mailto:spriyanshu723@gmail.com",
+    "cta": "Send Email"
+  }
+]

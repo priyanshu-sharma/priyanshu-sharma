@@ -1,6 +1,6 @@
 from fasthtml.common import *
 
-from backend_api.content_management.data import PROFILE
+from databases.primary.content import PROFILE
 
 NAV_ITEMS = [
     ("/", "Home"),

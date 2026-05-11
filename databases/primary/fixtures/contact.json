@@ -1,0 +1,13 @@
+[
+  {
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-11 12:08:08.628326",
+    "update_ts": "2026-05-11 12:08:08.628326",
+    "schema_version": 1,
+    "uuid": "8a4c617ece324d559cfa3d9b3bc04a93",
+    "active": true,
+    "title": "Contact",
+    "subtitle": "Senior Data Engineer | Machine Learning Specialist | Full Stack Developer"
+  }
+]

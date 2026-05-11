@@ -1,15 +1,19 @@
 from fasthtml.common import *
 
 from ui_design.components import page_shell
-from backend_api.content_management.data import CONTACT, PROFILE
+from backend_api.content_management.models.contact import Contact
+from backend_api.content_management.models.profile import Profile
 
 
 def contact_page():
+    contact_obj = Contact.select()[0]
+    profile_obj = Profile.select()[0]
+
     return page_shell(
-        f"Contact | {PROFILE['name']}",
+        f"Contact | {profile_obj.name}",
         "/contact",
         Section(
-            H2(CONTACT["title"], cls="title"),
+            H2(contact_obj.title, cls="title"),
             P(
                 "Let's connect for opportunities, consulting, or technical discussions.",
                 cls="subtitle muted",
@@ -22,7 +26,7 @@ def contact_page():
                 Div(
                     H3("About"),
                     H4("Me"),
-                    P("Priyanshu Sharma 👋"),
+                    P(f"{profile_obj.name} 👋"),
                     cls="card",
                 ),
                 # Now Card
@@ -42,18 +46,6 @@ def contact_page():
                         "Copy",
                         cls="btn btn-primary",
                         onclick="copyToClipboard('+1 (858)-305-8168', this)",
-                    ),
-                    style="display:flex; flex-direction:column; align-items:start;",
-                    cls="card",
-                ),
-                Div(
-                    H3("Contact Details"),
-                    H4("Personal Email"),
-                    P("spriyanshu723@gmail.com", style="margin-bottom: 1.5rem;"),
-                    Button(
-                        "Copy",
-                        cls="btn btn-primary",
-                        onclick="copyToClipboard('spriyanshu723@gmail.com', this)",
                     ),
                     style="display:flex; flex-direction:column; align-items:start;",
                     cls="card",

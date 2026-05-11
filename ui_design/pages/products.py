@@ -1,12 +1,17 @@
 from fasthtml.common import *
 
 from ui_design.components import page_shell
-from backend_api.content_management.data import PROFILE
+from backend_api.content_management.models.profile import Profile
 
 
 def products_page():
+    # Note: Products/Services aren't explicitly in your current data models yet
+    # based on the list registered in databases/init_redis.py
+    # Keeping them static for now but retrieving Profile from Redis.
+    profile_obj = Profile.select()[0]
+
     return page_shell(
-        f"Services | {PROFILE['name']}",
+        f"Services | {profile_obj.name}",
         "/products",
         Section(
             H2("Consulting & Services", cls="title"),

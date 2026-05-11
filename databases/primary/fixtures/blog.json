@@ -1,0 +1,67 @@
+[
+  {
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-11 12:08:08.627777",
+    "update_ts": "2026-05-11 12:08:08.627777",
+    "schema_version": 1,
+    "uuid": "a9e5614160904a7eb07638b29c67d950",
+    "active": true,
+    "date": "May 2026",
+    "title": "Scaling RAG Pipelines in Production",
+    "summary": "Lessons learned in deploying enterprise-grade RAG pipelines, managing vector database latency, and ensuring data freshness.",
+    "href": "#"
+  },
+  {
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-11 12:08:08.627869",
+    "update_ts": "2026-05-11 12:08:08.627869",
+    "schema_version": 1,
+    "uuid": "493c3ed872f84eaca1e27efc1d16e830",
+    "active": true,
+    "date": "April 2026",
+    "title": "Spark Job Tuning That Actually Reduced Costs",
+    "summary": "How partition strategy, adaptive execution, and skew handling brought measurable runtime improvements.",
+    "href": "#"
+  },
+  {
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-11 12:08:08.627903",
+    "update_ts": "2026-05-11 12:08:08.627903",
+    "schema_version": 1,
+    "uuid": "addab9a7cfa54c069b5d5fb388e85ddc",
+    "active": true,
+    "date": "March 2026",
+    "title": "Practical Data Quality Contracts",
+    "summary": "A lightweight framework for schema checks, freshness SLAs, and ownership boundaries.",
+    "href": "#"
+  },
+  {
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-11 12:08:08.627930",
+    "update_ts": "2026-05-11 12:08:08.627930",
+    "schema_version": 1,
+    "uuid": "223f0211ec874ff98f2a3d78b9e89921",
+    "active": true,
+    "date": "February 2026",
+    "title": "Airflow DAG Patterns for Stable Production Runs",
+    "summary": "Patterns that improved reliability, observability, and developer velocity in orchestration workflows.",
+    "href": "#"
+  },
+  {
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-11 12:08:08.627953",
+    "update_ts": "2026-05-11 12:08:08.627953",
+    "schema_version": 1,
+    "uuid": "d49f9c4f12634e7f991512ff82502a71",
+    "active": true,
+    "date": "January 2026",
+    "title": "Evaluating LLM Performance: Beyond Human Review",
+    "summary": "Implementing automated evaluation metrics for LLM-based data applications.",
+    "href": "#"
+  }
+]

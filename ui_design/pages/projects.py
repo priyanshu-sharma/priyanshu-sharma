@@ -1,24 +1,38 @@
 from fasthtml.common import *
 
 from ui_design.components import page_shell, project_card
-from backend_api.content_management.data import PROFILE, PROJECTS
+from backend_api.content_management.models.project import Project
+from backend_api.content_management.models.profile import Profile
 
 
 def projects_page():
-    items = PROJECTS["items"]
-    first = items[0]
-    second = items[1]
-    third = items[2]
-    fourth = items[3]
-    fifth = items[4]
-    sixth = items[5]
-    rest = items[6:]
+    # Fetch from Redis
+    items = Project.select()
+    profile_obj = Profile.select()[0]
+
+    # Static fallback titles if needed
+    title = "Projects"
+    subtitle = "Real-world data engineering and platform reliability projects."
+
+    # Map the ORM objects
+    data_items = [
+        {"tag": p.tag, "title": p.title, "desc": p.desc, "demo_href": p.demo_href}
+        for p in items
+    ]
+
+    first = data_items[0]
+    second = data_items[1]
+    third = data_items[2]
+    fourth = data_items[3]
+    fifth = data_items[4]
+    sixth = data_items[5]
+    rest = data_items[6:]
     return page_shell(
-        f"Projects | {PROFILE['name']}",
+        f"Projects | {profile_obj.name}",
         "/projects",
         Section(
-            H2(PROJECTS["title"], cls="title"),
-            P(PROJECTS["subtitle"], cls="subtitle muted"),
+            H2(title, cls="title"),
+            P(subtitle, cls="subtitle muted"),
             cls="section",
         ),
         Section(

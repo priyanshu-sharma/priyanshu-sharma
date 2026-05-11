@@ -13,6 +13,7 @@ class AutoTimestamp(RedisModel, ABC):
 
     install_ts: datetime = Field(default_factory=datetime.now)
     update_ts: datetime = Field(default_factory=datetime.now)
+    schema_version: int = Field(default=1)
 
     def pre_save(self):
         """

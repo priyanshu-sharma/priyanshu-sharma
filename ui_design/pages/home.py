@@ -1,30 +1,37 @@
 from fasthtml.common import *
 
 from ui_design.components import page_shell
-from backend_api.content_management.data import HOME, PROFILE
+from backend_api.content_management.models.home import Home
+from backend_api.content_management.models.profile import Profile
 
 
 def home_page():
+    # Fetch from Redis
+    home_obj = Home.select()[0]
+    profile_obj = Profile.select()[0]
+
     return page_shell(
-        f"{PROFILE['name']} | {PROFILE['role']}",
+        f"{profile_obj.name} | {profile_obj.role}",
         "/",
         Section(
-            H2(HOME["title"], cls="title"),
-            P(HOME["subtitle"], cls="subtitle muted", style="margin-bottom: 1.5rem;"),
-            Div(*(Span(item, cls="badge") for item in HOME["badges"]), cls="badge-row"),
+            H2(home_obj.title, cls="title"),
+            P(home_obj.subtitle, cls="subtitle muted", style="margin-bottom: 1.5rem;"),
+            Div(
+                *(Span(item, cls="badge") for item in home_obj.badges), cls="badge-row"
+            ),
             cls="section",
         ),
         Section(
             Div(
                 # Top Row: Me, Experience, Resume
                 Div(
-                    Div(H3("Me"), P("Priyanshu Sharma 👋"), cls="bento-card"),
+                    Div(H3("Me"), P(f"{profile_obj.name} 👋"), cls="bento-card"),
                     Div(H3("Experience"), P("7+ Years"), cls="bento-card"),
                     Div(
                         H3("Resume"),
                         A(
                             "View PDF",
-                            href=PROFILE["resume_path"],
+                            href=profile_obj.resume_path,
                             cls="btn btn-primary",
                         ),
                         cls="bento-card",
@@ -34,7 +41,7 @@ def home_page():
                 # Philosophy (Full Width)
                 Div(
                     H3("Philosophy"),
-                    P(HOME["philosophy"]),
+                    P(home_obj.philosophy),
                     cls="bento-card",
                     style="margin-bottom: 1.5rem;",
                 ),
@@ -42,15 +49,13 @@ def home_page():
                 Div(
                     Div(
                         H3("Toolkit"),
-                        P(
-                            "Python, Spark, Airflow, Kafka, dbt, Snowflake, Kubernetes, AWS, GCP."
-                        ),
+                        P(", ".join(home_obj.badges)),
                         cls="bento-card",
                         style="flex: 1;",
                     ),
                     Div(
                         H3("Workspace"),
-                        P(HOME["setup"]),
+                        P(home_obj.setup),
                         cls="bento-card",
                         style="flex: 1;",
                     ),
@@ -72,7 +77,7 @@ def home_page():
                     ),
                     Div(
                         H3("Learning"),
-                        P(HOME["learning"]),
+                        P(home_obj.learning),
                         cls="bento-card",
                         style="flex: 7;",
                     ),
@@ -87,7 +92,7 @@ def home_page():
                         Button(
                             "Copy Email",
                             cls="btn btn-primary",
-                            onclick=f"copyToClipboard('{PROFILE['email']}', this)",
+                            onclick=f"copyToClipboard('{profile_obj.email}', this)",
                         ),
                         cls="bento-card",
                     ),
