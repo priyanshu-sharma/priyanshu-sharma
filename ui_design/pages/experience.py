@@ -1,14 +1,13 @@
 from fasthtml.common import *
 
 from ui_design.components import page_shell
-from backend_api.content_management.models.experience import Experience
-from backend_api.content_management.models.profile import Profile
+from backend_api.content_management.api import get_experiences, get_profile
 
 
 def experience_page():
     # Fetch from Redis
-    experiences = Experience.select()
-    profile_obj = Profile.select()[0]
+    experiences = get_experiences()
+    profile_obj = get_profile()
 
     return page_shell(
         f"Experience | {profile_obj.name}",

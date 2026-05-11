@@ -1,13 +1,12 @@
 from fasthtml.common import *
 
 from ui_design.components import page_shell
-from backend_api.content_management.models.contact import Contact
-from backend_api.content_management.models.profile import Profile
+from backend_api.content_management.api import get_contact, get_profile
 
 
 def contact_page():
-    contact_obj = Contact.select()[0]
-    profile_obj = Profile.select()[0]
+    contact_obj = get_contact()
+    profile_obj = get_profile()
 
     return page_shell(
         f"Contact | {profile_obj.name}",

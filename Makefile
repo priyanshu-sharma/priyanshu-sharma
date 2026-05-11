@@ -46,5 +46,8 @@ make-migrations:
 load-fixtures:
 	uv run python databases/init_redis.py
 
+test-ci:
+	TESTING=true uv run pytest tests/
+
 generate-fixtures:
 	PYTHONPATH=. uv run python databases/generate_fixtures.py

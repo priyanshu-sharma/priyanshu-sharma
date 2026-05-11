@@ -1,14 +1,13 @@
 from fasthtml.common import *
 
 from ui_design.components import page_shell
-from backend_api.content_management.models.home import Home
-from backend_api.content_management.models.profile import Profile
+from backend_api.content_management.api import get_home, get_profile
 
 
 def home_page():
     # Fetch from Redis
-    home_obj = Home.select()[0]
-    profile_obj = Profile.select()[0]
+    home_obj = get_home()
+    profile_obj = get_profile()
 
     return page_shell(
         f"{profile_obj.name} | {profile_obj.role}",

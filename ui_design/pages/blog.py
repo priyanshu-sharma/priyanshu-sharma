@@ -1,14 +1,13 @@
 from fasthtml.common import *
 
 from ui_design.components import page_shell
-from backend_api.content_management.models.blog import Blog
-from backend_api.content_management.models.profile import Profile
+from backend_api.content_management.api import get_blogs, get_profile
 
 
 def blog_page():
     # Fetch all post records from Redis
-    posts = Blog.select()
-    profile_obj = Profile.select()[0]
+    posts = get_blogs()
+    profile_obj = get_profile()
 
     return page_shell(
         f"Blog | {profile_obj.name}",

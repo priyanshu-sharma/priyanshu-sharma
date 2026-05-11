@@ -1,3 +1,4 @@
+from pydantic import EmailStr
 from uuid import uuid4
 from backend_api.internal_management.models.autotimestamped import AutoTimestamp
 from backend_api.internal_management.models.usertracking import UserTracking
@@ -9,7 +10,7 @@ class Profile(AutoTimestamp, UserTracking):
     active: bool = True
     name: str
     role: str
-    email: str
+    email: EmailStr
     resume_path: str
     availability: str
 

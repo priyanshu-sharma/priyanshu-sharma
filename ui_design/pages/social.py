@@ -1,13 +1,12 @@
 from fasthtml.common import *
 
 from ui_design.components import page_shell
-from backend_api.content_management.models.social import Social
-from backend_api.content_management.models.profile import Profile
+from backend_api.content_management.api import get_social, get_profile
 
 
 def social_page():
-    social_items = Social.select()
-    profile_obj = Profile.select()[0]
+    social_items = get_social()
+    profile_obj = get_profile()
 
     return page_shell(
         f"Social | {profile_obj.name}",
