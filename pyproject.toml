@@ -16,3 +16,5 @@ exclude = ["priyanshu-sharma", "tests"]
 [tool.isort]
 profile = "black"
 
+[tool.fastapi]
+entrypoint = "core_app.app:core_app"
