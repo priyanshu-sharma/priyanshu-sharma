@@ -1,4 +1,4 @@
-from fasthtml.common import *
+from fasthtml.common import A, Article, H3, H4, P, Div
 from backend_api.content_management.models.project import Project
 
 

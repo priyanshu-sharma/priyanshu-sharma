@@ -6,6 +6,8 @@ from backend_api.server_config.settings import (
     REDIS_PORT,
     REDIS_DB,
     REDIS_STORE_NAME,
+    REDIS_USER,
+    REDIS_PASSWORD,
 )
 
 # Import models
@@ -19,7 +21,16 @@ from backend_api.content_management.models.site import Site
 from backend_api.content_management.models.social import Social
 
 # Configuration
-config = RedisConfig(host=REDIS_HOST, port=REDIS_PORT, db=REDIS_DB)
+if REDIS_PASSWORD or REDIS_USER:
+    config = RedisConfig(
+        host=REDIS_HOST,
+        port=REDIS_PORT,
+        db=REDIS_DB,
+        password=REDIS_PASSWORD,
+        user=REDIS_USER,
+    )
+else:
+    config = RedisConfig(host=REDIS_HOST, port=REDIS_PORT, db=REDIS_DB)
 store = Store(name=REDIS_STORE_NAME, redis_config=config)
 
 MODELS = [Blog, Contact, Experience, Home, Profile, Project, Site, Social]

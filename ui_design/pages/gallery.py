@@ -1,4 +1,4 @@
-from fasthtml.common import *
+from fasthtml.common import Div, H2, H3, P, Section
 from ui_design.components import page_shell, project_card
 from backend_api.content_management.api import get_profile
 from backend_api.content_management.models.project import Project

@@ -1,4 +1,4 @@
-from fasthtml.common import *
+from fasthtml.common import Div, H2, H3, H4, P, Section, Article
 
 from ui_design.components import page_shell
 from backend_api.content_management.api import get_experiences, get_profile

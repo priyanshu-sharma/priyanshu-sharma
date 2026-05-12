@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Any, cast
 from backend_api.content_management.models.blog import Blog
 from backend_api.content_management.models.contact import Contact
 from backend_api.content_management.models.experience import Experience
@@ -23,9 +23,8 @@ def get_blogs() -> List[Blog]:
     try:
         return Blog.select()
     except Exception:
-        # Fallback to static data
         return [
-            Blog(**{**post, "created_by": "fallback", "updated_by": "fallback"})
+            Blog(**cast(Any, post), created_by="fallback", updated_by="fallback")
             for post in blog.BLOG["posts"]
         ]
 
@@ -35,7 +34,7 @@ def get_contact() -> Contact:
         return Contact.select()[0]
     except Exception:
         return Contact(
-            **{**contact.CONTACT, "created_by": "fallback", "updated_by": "fallback"}
+            **cast(Any, contact.CONTACT), created_by="fallback", updated_by="fallback"
         )
 
 
@@ -44,7 +43,7 @@ def get_experiences() -> List[Experience]:
         return Experience.select()
     except Exception:
         return [
-            Experience(**{**role, "created_by": "fallback", "updated_by": "fallback"})
+            Experience(**cast(Any, role), created_by="fallback", updated_by="fallback")
             for role in experience.EXPERIENCE["roles"]
         ]
 
@@ -53,7 +52,9 @@ def get_home() -> Home:
     try:
         return Home.select()[0]
     except Exception:
-        return Home(**{**home.HOME, "created_by": "fallback", "updated_by": "fallback"})
+        return Home(
+            **cast(Any, home.HOME), created_by="fallback", updated_by="fallback"
+        )
 
 
 def get_profile() -> Profile:
@@ -61,7 +62,7 @@ def get_profile() -> Profile:
         return Profile.select()[0]
     except Exception:
         return Profile(
-            **{**profile.PROFILE, "created_by": "fallback", "updated_by": "fallback"}
+            **cast(Any, profile.PROFILE), created_by="fallback", updated_by="fallback"
         )
 
 
@@ -70,7 +71,7 @@ def get_projects() -> List[Project]:
         return Project.select()
     except Exception:
         return [
-            Project(**{**item, "created_by": "fallback", "updated_by": "fallback"})
+            Project(**cast(Any, item), created_by="fallback", updated_by="fallback")
             for item in projects.PROJECTS["items"]
         ]
 
@@ -80,6 +81,6 @@ def get_social() -> List[Social]:
         return Social.select()
     except Exception:
         return [
-            Social(**{**link, "created_by": "fallback", "updated_by": "fallback"})
+            Social(**cast(Any, link), created_by="fallback", updated_by="fallback")
             for link in social.SOCIAL["links"]
         ]

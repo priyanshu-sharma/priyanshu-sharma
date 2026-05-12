@@ -14,6 +14,7 @@ import time
 from fastapi import Request
 from backend_api.server_config.logging import setup_logging
 import structlog
+from backend_api.server_config.security import SecurityHeadersMiddleware
 
 log = structlog.get_logger()
 
@@ -88,6 +89,7 @@ def create_ui_app(api_app: FastAPI) -> FastHTML:
             Style(CSS),
         ),
     )
+    ui_app.add_middleware(SecurityHeadersMiddleware)
     register_pages(ui_app.route)
     ui_app.mount("/api", api_app)
     ui_app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")

@@ -11,6 +11,6 @@ __pycache__/
 .codex
 backend_api/db.sqlite3
 .env
-.env
+.prod.env
 db.sqlite3
 .fastapicloud/
