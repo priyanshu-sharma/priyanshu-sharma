@@ -1,11 +1,11 @@
-from .profile import PROFILE
-from .site import SITE
-from .home import HOME
-from .projects import PROJECTS
-from .experience import EXPERIENCE
 from .blog import BLOG
-from .social import SOCIAL
 from .contact import CONTACT
+from .experience import EXPERIENCE
+from .home import HOME
+from .profile import PROFILE
+from .projects import PROJECTS
+from .site import SITE
+from .social import SOCIAL
 
 __all__ = [
     "PROFILE",

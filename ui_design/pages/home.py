@@ -1,7 +1,7 @@
-from fasthtml.common import Div, H2, H3, P, Span, Section, A, Button
+from fasthtml.common import H2, H3, A, Button, Div, P, Section, Span
 
-from ui_design.components import page_shell
 from backend_api.content_management.api import get_home, get_profile
+from ui_design.components import page_shell
 
 
 def home_page():

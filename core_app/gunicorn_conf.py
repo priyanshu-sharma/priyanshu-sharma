@@ -1,12 +1,12 @@
 from backend_api.server_config.settings import (
-    BIND,
-    WORKER_CLASS,
-    RELOAD,
-    WORKERS,
-    LOG_LEVEL,
     ACCESS_LOG,
-    ERROR_LOG,
+    BIND,
     CAPTURE_OUTPUT,
+    ERROR_LOG,
+    LOG_LEVEL,
+    RELOAD,
+    WORKER_CLASS,
+    WORKERS,
 )
 
 bind = BIND

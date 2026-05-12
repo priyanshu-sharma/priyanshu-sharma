@@ -1,6 +1,7 @@
-from typing import Literal, Optional
-from pydantic_settings import BaseSettings, SettingsConfigDict
 from pathlib import Path
+from typing import Literal, Optional
+
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 ENV_SETTINGS_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = ENV_SETTINGS_DIR.parent.parent

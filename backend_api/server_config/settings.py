@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 
 import multiprocessing
 from pathlib import Path
+
 from backend_api.server_config.env_settings import settings
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.

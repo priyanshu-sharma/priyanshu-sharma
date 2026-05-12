@@ -1,16 +1,16 @@
 from fasthtml.common import (
-    Title,
-    Div,
-    Header,
-    Nav,
-    Main,
-    Footer,
     H1,
     A,
-    Span,
-    P,
     Button,
+    Div,
+    Footer,
+    Header,
+    Main,
+    Nav,
+    P,
     Script,
+    Span,
+    Title,
 )
 
 from databases.primary.content import PROFILE

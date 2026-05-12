@@ -1,7 +1,7 @@
-from fasthtml.common import Div, H2, H3, H4, P, Section, A, Button
+from fasthtml.common import H2, H3, H4, A, Button, Div, P, Section
 
-from ui_design.components import page_shell
 from backend_api.content_management.api import get_contact, get_profile
+from ui_design.components import page_shell
 
 
 def contact_page():

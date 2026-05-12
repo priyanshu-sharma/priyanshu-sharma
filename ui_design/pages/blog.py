@@ -1,7 +1,7 @@
-from fasthtml.common import Div, H2, H3, H4, P, Section, A
+from fasthtml.common import H2, H3, H4, A, Div, P, Section
 
-from ui_design.components import page_shell
 from backend_api.content_management.api import get_blogs, get_profile
+from ui_design.components import page_shell
 
 
 def blog_page():

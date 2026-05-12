@@ -1,20 +1,20 @@
-from fastapi import FastAPI
-from fastapi.staticfiles import StaticFiles
-from fasthtml.common import FastHTML, Meta, Style, Link
-from contextlib import asynccontextmanager
-from databases.primary.content import SITE
-from backend_api.server_config.styles import CSS
-from backend_api.server_config.settings import DEBUG, STATIC_DIR
-from backend_api.server_config import health_router
-from backend_api.django_init import setup_django
-from ui_design.pages import register_pages
-from databases.init_redis import verify_redis, clear_redis
-
 import time
-from fastapi import Request
-from backend_api.server_config.logging import setup_logging
+from contextlib import asynccontextmanager
+
 import structlog
+from fastapi import FastAPI, Request
+from fastapi.staticfiles import StaticFiles
+from fasthtml.common import FastHTML, Link, Meta, Style
+
+from backend_api.django_init import setup_django
+from backend_api.server_config import health_router
+from backend_api.server_config.logging import setup_logging
 from backend_api.server_config.security import SecurityHeadersMiddleware
+from backend_api.server_config.settings import DEBUG, STATIC_DIR
+from backend_api.server_config.styles import CSS
+from databases.init_redis import clear_redis, verify_redis
+from databases.primary.content import SITE
+from ui_design.pages import register_pages
 
 log = structlog.get_logger()
 

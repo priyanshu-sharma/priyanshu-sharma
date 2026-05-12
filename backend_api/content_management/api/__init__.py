@@ -1,4 +1,5 @@
-from typing import List, Any, cast
+from typing import Any, List, cast
+
 from backend_api.content_management.models.blog import Blog
 from backend_api.content_management.models.contact import Contact
 from backend_api.content_management.models.experience import Experience

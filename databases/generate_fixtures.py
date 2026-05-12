@@ -1,7 +1,16 @@
 import json
-from uuid import uuid4
 from datetime import datetime
 from pathlib import Path
+from uuid import uuid4
+
+from backend_api.content_management.models.blog import Blog
+from backend_api.content_management.models.contact import Contact
+from backend_api.content_management.models.experience import Experience
+from backend_api.content_management.models.home import Home
+from backend_api.content_management.models.profile import Profile
+from backend_api.content_management.models.project import Project
+from backend_api.content_management.models.site import Site
+from backend_api.content_management.models.social import Social
 from databases.primary.content import (
     blog,
     contact,
@@ -12,14 +21,6 @@ from databases.primary.content import (
     site,
     social,
 )
-from backend_api.content_management.models.blog import Blog
-from backend_api.content_management.models.contact import Contact
-from backend_api.content_management.models.experience import Experience
-from backend_api.content_management.models.home import Home
-from backend_api.content_management.models.profile import Profile
-from backend_api.content_management.models.project import Project
-from backend_api.content_management.models.site import Site
-from backend_api.content_management.models.social import Social
 
 FIXTURES_DIR = Path("databases/primary/fixtures")
 FIXTURES_DIR.mkdir(parents=True, exist_ok=True)

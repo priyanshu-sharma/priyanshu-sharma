@@ -1,4 +1,5 @@
 from abc import ABC
+
 from pydantic import Field
 from pydantic_redis import Model as RedisModel
 

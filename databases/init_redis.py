@@ -1,14 +1,7 @@
 import json
 from pathlib import Path
-from pydantic_redis import Store, RedisConfig
-from backend_api.server_config.settings import (
-    REDIS_HOST,
-    REDIS_PORT,
-    REDIS_DB,
-    REDIS_STORE_NAME,
-    REDIS_USER,
-    REDIS_PASSWORD,
-)
+
+from pydantic_redis import RedisConfig, Store
 
 # Import models
 from backend_api.content_management.models.blog import Blog
@@ -19,6 +12,14 @@ from backend_api.content_management.models.profile import Profile
 from backend_api.content_management.models.project import Project
 from backend_api.content_management.models.site import Site
 from backend_api.content_management.models.social import Social
+from backend_api.server_config.settings import (
+    REDIS_DB,
+    REDIS_HOST,
+    REDIS_PASSWORD,
+    REDIS_PORT,
+    REDIS_STORE_NAME,
+    REDIS_USER,
+)
 
 # Configuration
 if REDIS_PASSWORD or REDIS_USER:

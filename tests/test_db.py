@@ -1,4 +1,5 @@
 import os
+
 from backend_api.server_config.settings import DATABASES
 
 

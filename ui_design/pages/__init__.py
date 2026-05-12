@@ -1,12 +1,12 @@
 from .blog import blog_page
 from .contact import contact_page
 from .experience import experience_page
+from .gallery import gallery_page
 from .home import home_page
-from .projects import projects_page
 from .products import products_page
+from .projects import projects_page
 from .resume import resume_page
 from .social import social_page
-from .gallery import gallery_page
 
 
 def register_pages(rt):

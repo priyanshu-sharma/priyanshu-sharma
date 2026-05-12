@@ -1,5 +1,7 @@
-from pydantic import EmailStr
 from uuid import uuid4
+
+from pydantic import EmailStr
+
 from backend_api.internal_management.models.autotimestamped import AutoTimestamp
 from backend_api.internal_management.models.usertracking import UserTracking
 

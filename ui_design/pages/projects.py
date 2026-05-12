@@ -1,7 +1,7 @@
-from fasthtml.common import Div, H2, H3, H4, P, Section, A
+from fasthtml.common import H2, H3, H4, A, Div, P, Section
 
+from backend_api.content_management.api import get_profile, get_projects
 from ui_design.components import page_shell, project_card
-from backend_api.content_management.api import get_projects, get_profile
 
 
 def projects_page():

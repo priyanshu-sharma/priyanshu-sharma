@@ -1,7 +1,7 @@
-from fasthtml.common import Div, H2, H3, H4, P, Section, Article
+from fasthtml.common import H2, H3, H4, Article, Div, P, Section
 
-from ui_design.components import page_shell
 from backend_api.content_management.models.profile import Profile
+from ui_design.components import page_shell
 
 
 def products_page():

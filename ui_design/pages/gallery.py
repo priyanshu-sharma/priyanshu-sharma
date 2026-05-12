@@ -1,7 +1,8 @@
-from fasthtml.common import Div, H2, H3, P, Section
-from ui_design.components import page_shell, project_card
+from fasthtml.common import H2, H3, Div, P, Section
+
 from backend_api.content_management.api import get_profile
 from backend_api.content_management.models.project import Project
+from ui_design.components import page_shell, project_card
 
 
 def gallery_page():
