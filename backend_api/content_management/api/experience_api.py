@@ -6,15 +6,16 @@ from databases.primary.content import experience
 
 def get_experiences() -> List[Experience]:
     try:
-        return Experience.select()
+        res = Experience.select()
+        return res if res is not None else []
     except Exception:
         return [
             Experience(
                 **{
-                    **cast(dict[str, Any], role),
+                    **cast(dict[str, Any], exp),
                     "created_by": "system",
                     "updated_by": "system",
                 }
             )
-            for role in experience.EXPERIENCE["roles"]
+            for exp in experience.EXPERIENCE["roles"]
         ]

@@ -6,7 +6,8 @@ from databases.primary.content import social
 
 def get_social() -> List[Social]:
     try:
-        return Social.select()
+        res = Social.select()
+        return res if res is not None else []
     except Exception:
         return [
             Social(

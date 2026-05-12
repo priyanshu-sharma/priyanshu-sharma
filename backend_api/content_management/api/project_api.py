@@ -6,15 +6,16 @@ from databases.primary.content import projects
 
 def get_projects() -> List[Project]:
     try:
-        return Project.select()
+        res = Project.select()
+        return res if res is not None else []
     except Exception:
         return [
             Project(
                 **{
-                    **cast(dict[str, Any], item),
+                    **cast(dict[str, Any], proj),
                     "created_by": "system",
                     "updated_by": "system",
                 }
             )
-            for item in projects.PROJECTS["items"]
+            for proj in projects.PROJECTS["items"]
         ]
