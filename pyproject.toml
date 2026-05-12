@@ -11,6 +11,9 @@ dependencies = [
     "pydantic-settings",
     "dj-database-url",
     "python-dotenv",
+    "pydantic-redis>=0.7.0",
+    "structlog>=25.5.0",
+    "tenacity>=9.1.4",
 ]
 
 [dependency-groups]
