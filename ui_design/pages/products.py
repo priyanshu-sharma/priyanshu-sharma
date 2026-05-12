@@ -1,6 +1,6 @@
 from fasthtml.common import H2, H3, H4, Article, Div, P, Section
 
-from backend_api.content_management.models.profile import Profile
+from backend_api.content_management.api import get_profile
 from ui_design.components import page_shell
 
 
@@ -8,7 +8,7 @@ def products_page():
     # Note: Products/Services aren't explicitly in your current data models yet
     # based on the list registered in databases/init_redis.py
     # Keeping them static for now but retrieving Profile from Redis.
-    profile_obj = Profile.select()[0]
+    profile_obj = get_profile()
 
     return page_shell(
         f"Services | {profile_obj.name}",
