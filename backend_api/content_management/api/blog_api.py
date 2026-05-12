@@ -6,7 +6,8 @@ from databases.primary.content import blog
 
 def get_blogs() -> List[Blog]:
     try:
-        return Blog.select()
+        res = Blog.select()
+        return res if res is not None else []
     except Exception:
         return [
             Blog(
