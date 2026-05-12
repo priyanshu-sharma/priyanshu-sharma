@@ -1,8 +1,10 @@
 import os
-from databases.db_migrate import db_migrate
+
+from databases import db_migrate, load_fixtures
 
 
 def run() -> None:
+    load_fixtures()
     # Run database migrations before starting the application
     db_migrate()
 

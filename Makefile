@@ -1,7 +1,4 @@
-.PHONY: run startapp format lint fix precommit precommit-install clean test migrate makemigrations_content_management
-
-run:
-	uv run python run.py
+.PHONY: startapp format lint fix precommit precommit-install clean test migrate makemigrations_content_management load-fixtures
 
 startapp:
 	uv run python run.py
@@ -45,3 +42,12 @@ make-migrations:
 	uv run python manage.py makemigrations
 	uv run python manage.py migrate
 	uv run python manage.py showmigrations
+
+load-fixtures:
+	uv run python databases/init_redis.py
+
+test-ci:
+	TESTING=true uv run pytest tests/
+
+generate-fixtures:
+	PYTHONPATH=. uv run python databases/generate_fixtures.py

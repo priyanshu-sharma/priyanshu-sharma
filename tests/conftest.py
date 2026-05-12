@@ -1,16 +1,14 @@
 import pytest
-from httpx import ASGITransport, AsyncClient
-from core_app.app import core_app
+
+from backend_api.server_config.env_settings import settings
+from databases.init_redis import store
 
 
-@pytest.fixture(scope="session")
-def anyio_backend():
-    return "asyncio"
-
-
-@pytest.fixture(scope="session")
-async def client():
-    async with AsyncClient(
-        transport=ASGITransport(app=core_app), base_url="http://test"
-    ) as ac:
-        yield ac
+@pytest.fixture(autouse=True)
+def setup_test_redis():
+    # Force testing mode
+    settings.testing = True
+    # Re-initialize the store connection to use the new DB
+    store.redis_store.flushdb()
+    yield
+    store.redis_store.flushdb()

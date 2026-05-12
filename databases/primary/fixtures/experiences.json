@@ -1,0 +1,80 @@
+[
+  {
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-11 12:08:08.628643",
+    "update_ts": "2026-05-11 12:08:08.628643",
+    "schema_version": 1,
+    "uuid": "5ee521b35d90410291237ef65e85f01d",
+    "active": true,
+    "title": "Senior Data Engineer - II",
+    "company": "Verizon",
+    "summary": "Owned and operated petabyte-scale, real-time data processing systems using Spark Structured Streaming, Kafka, and Apache Druid.",
+    "details": "Stack: AWS (S3, Glue, Redshift, EMR, Kinesis, MSK), PySpark, Scala, Jenkins, Terraform, DBT, Airflow"
+  },
+  {
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-11 12:08:08.628709",
+    "update_ts": "2026-05-11 12:08:08.628709",
+    "schema_version": 1,
+    "uuid": "b02c5a7d3e3848f5b16c95f4c903029f",
+    "active": true,
+    "title": "Senior Data Engineer I",
+    "company": "Johnson & Johnson R&D",
+    "summary": "Architected scalable GCP data platforms; led advanced analytics and ML workflows with Vertex AI, Spark, and Snowflake.",
+    "details": "Stack: GCP (BigQuery, Dataflow, Composer, Dataproc, GCS), Python, Spark, dbt, Snowflake, Kubernetes"
+  },
+  {
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-11 12:08:08.628751",
+    "update_ts": "2026-05-11 12:08:08.628751",
+    "schema_version": 1,
+    "uuid": "5eb0f4d806b2479d9a2cfc938a02796a",
+    "active": true,
+    "title": "Senior Data Intern",
+    "company": "Wells Fargo",
+    "summary": "Migrated ETL workflows to Azure Data Factory and optimized large-scale data pipelines using Azure Databricks.",
+    "details": "Stack: Azure (ADF, Databricks, Blob Storage, Synapse), Scala, PySpark, SQL, Tableau, Power BI"
+  },
+  {
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-11 12:08:08.628778",
+    "update_ts": "2026-05-11 12:08:08.628778",
+    "schema_version": 1,
+    "uuid": "f65fed59e3c547a894a0a7845be1e89f",
+    "active": true,
+    "title": "Founding Data Intern",
+    "company": "KayaPay",
+    "summary": "Designed end-to-end backend and cloud-native data ingestion workflows on Oracle Cloud Infrastructure.",
+    "details": "Stack: OCI, Python, Apache Spark, REST APIs, React, TypeScript"
+  },
+  {
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-11 12:08:08.628811",
+    "update_ts": "2026-05-11 12:08:08.628811",
+    "schema_version": 1,
+    "uuid": "1133b2c12fd54e27b2cdccde833e0c00",
+    "active": true,
+    "title": "Senior Software Engineer",
+    "company": "Blinkit",
+    "summary": "Engineered distributed systems and high-throughput ingestion pipelines within the Hadoop ecosystem.",
+    "details": "Stack: Hadoop (Hive, Pig, HBase, MapReduce), Spark (Scala), Python, Django, Spring Boot, RabbitMQ"
+  },
+  {
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-11 12:08:08.628836",
+    "update_ts": "2026-05-11 12:08:08.628836",
+    "schema_version": 1,
+    "uuid": "8d19c6549ad547d3867b296693939ae2",
+    "active": true,
+    "title": "Software Engineer",
+    "company": "Blinkit",
+    "summary": "Built distributed backend systems and optimized ETL pipelines for large-scale data processing.",
+    "details": "Stack: Apache NiFi, Hive, Spark, Django, Spring Boot, Go, PostGIS"
+  }
+]

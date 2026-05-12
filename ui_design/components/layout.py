@@ -1,6 +1,19 @@
-from fasthtml.common import *
+from fasthtml.common import (
+    H1,
+    A,
+    Button,
+    Div,
+    Footer,
+    Header,
+    Main,
+    Nav,
+    P,
+    Script,
+    Span,
+    Title,
+)
 
-from backend_api.content_management.data import PROFILE
+from databases.primary.content import PROFILE
 
 NAV_ITEMS = [
     ("/", "Home"),

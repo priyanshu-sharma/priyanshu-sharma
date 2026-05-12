@@ -1,0 +1,23 @@
+[
+  {
+    "created_by": "system",
+    "updated_by": "system",
+    "install_ts": "2026-05-11 12:08:08.629164",
+    "update_ts": "2026-05-11 12:08:08.629164",
+    "schema_version": 1,
+    "uuid": "c540214d20cb422f994fd623c5f99b4d",
+    "active": true,
+    "title": "Building reliable data systems at scale",
+    "subtitle": "I design and maintain modern data platforms using Python, SQL, Spark, orchestration, and cloud infrastructure.",
+    "badges": [
+      "Python",
+      "Spark",
+      "Airflow",
+      "Kafka",
+      "dbt"
+    ],
+    "philosophy": "I believe that data systems should be boring, scalable, and self-documenting. Reliability isn't a feature; it's the foundation of every architectural decision.",
+    "learning": "Currently deepening my understanding of Rust and its potential for high-performance data processing pipelines.",
+    "setup": "MacBook Pro M3, VS Code, iTerm2, and Obsidian for knowledge management."
+  }
+]

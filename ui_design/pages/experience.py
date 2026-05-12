@@ -1,29 +1,36 @@
-from fasthtml.common import *
+from fasthtml.common import H2, H3, H4, Article, Div, P, Section
 
+from backend_api.content_management.api import get_experiences, get_profile
 from ui_design.components import page_shell
-from backend_api.content_management.data import EXPERIENCE, PROFILE
 
 
 def experience_page():
+    # Fetch from Redis
+    experiences = get_experiences()
+    profile_obj = get_profile()
+
     return page_shell(
-        f"Experience | {PROFILE['name']}",
+        f"Experience | {profile_obj.name}",
         "/experience",
         Section(
-            H2(EXPERIENCE["title"], cls="title"),
-            P(EXPERIENCE["subtitle"], cls="subtitle muted"),
+            H2("Experience", cls="title"),
+            P(
+                "Platform engineering, analytics infrastructure, and reliability operations.",
+                cls="subtitle muted",
+            ),
             cls="section",
         ),
         Section(
             Div(
                 *(
                     Article(
-                        H3(role["company"]),
-                        H4(role["title"]),
-                        P(role["summary"], cls="muted", style="margin:0.5rem 0 0;"),
-                        P(role["details"], style="margin:1rem 0 0; font-size:0.9rem;"),
+                        H3(exp.company),
+                        H4(exp.title),
+                        P(exp.summary, cls="muted", style="margin:0.5rem 0 0;"),
+                        P(exp.details, style="margin:1rem 0 0; font-size:0.9rem;"),
                         cls="card",
                     )
-                    for role in EXPERIENCE["roles"]
+                    for exp in experiences
                 ),
                 cls="grid-2",
             ),

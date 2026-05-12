@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 
 import multiprocessing
 from pathlib import Path
+
 from backend_api.server_config.env_settings import settings
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -40,7 +41,7 @@ SECRET_KEY = settings.secret_key
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = settings.debug
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS: list[str] = []
 
 
 # Application definition
@@ -53,6 +54,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "backend_api.content_management",
+    "backend_api.internal_management",
 ]
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -125,6 +127,14 @@ USE_I18N = True
 
 USE_TZ = True
 
+
+# Redis settings
+REDIS_HOST = settings.redis_host
+REDIS_PORT = settings.redis_port
+REDIS_DB = settings.redis_db
+REDIS_STORE_NAME = settings.redis_store_name
+REDIS_USER = settings.redis_user
+REDIS_PASSWORD = settings.redis_password
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
