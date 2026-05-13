@@ -23,12 +23,12 @@ log = structlog.get_logger()
 @asynccontextmanager
 async def api_lifespan(app: FastAPI):
     setup_logging()
-    log.info("starting_backend_api")
+    log.info("-----------------🔥 Starting Backend API-----------------")
     load_fixtures()
     setup_django()
     yield
     clear_redis()
-    log.info("closing_backend_api")
+    log.info("-----------------🛑 Closing Backend API------------------")
 
 
 def create_api_app() -> FastAPI:
