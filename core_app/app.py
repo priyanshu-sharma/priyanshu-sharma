@@ -12,7 +12,7 @@ from backend_api.server_config.logging import setup_logging
 from backend_api.server_config.security import SecurityHeadersMiddleware
 from backend_api.server_config.settings import DEBUG, STATIC_DIR
 from backend_api.server_config.styles import CSS
-from databases.init_redis import clear_redis, verify_redis
+from databases.init_redis import clear_redis, load_fixtures
 from databases.primary.content import SITE
 from ui_design.pages import register_pages
 
@@ -24,7 +24,7 @@ log = structlog.get_logger()
 async def api_lifespan(app: FastAPI):
     setup_logging()
     log.info("starting_backend_api")
-    verify_redis()
+    load_fixtures()
     setup_django()
     yield
     clear_redis()
